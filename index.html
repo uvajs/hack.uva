@@ -21,117 +21,18 @@
         <meta name="msapplication-TileColor" content="#222222">
 
 
+		<script src="/bower_componenets/Snap.svg/dist/snap.svg.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>
-		$(function() {
 
-			$bg = $('.background');
-			$sliver = $('.sliver');
-
-			var desired = 300;
-
-			var ratio = $bg.width() / $bg.height();
-
-			var adjust = function() {
-				var height = "innerHeight" in window 
-	               ? window.innerHeight
-	               : document.documentElement.offsetHeight;
-	                width = $(window).width();
-	                center = (width * .4)/2;
-
-	            if (height < 480) height = 480;
-
-	            if ((height < 600 && width > 720) || (height >=600 && width > 900)) { 
-					$bg.css('height', height);
-					$sliver.css('height', height);
-					$bg.css('left', (center-((ratio*height)/2)) + "px");
-				}
-				else {
-					$bg.css('height', height);
-					$bg.css('left', ((width/2)-((ratio*height)/2)) + "px");
-				}
-			};
-
-			adjust();
-
-			$(window).resize(adjust);
-
-			$('.signup').click(function() {
-				var val = $('input[type="text"]').val();
-				$.ajax('save.php', {
-					type: "POST",
-					data: {
-						email: val
-					},
-					success: function(data) {
-						if (data != "error") {
-							$('input[type="text"]').val('');
-						}
-					}
-				})
-			});
-
-		});
-		</script>
-        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
-        <!--
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="">
-        -->
-
-        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
-        <!--
-        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-        -->
+		<script src="/js/main.js"></script>
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/app.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 
-
-		<div class="wrap">
-			<img class="background" src="images/UVA-Rotunda.jpg"/> 
-		</div>
-
-		<aside>
-			<img class="logo" src="images/hack-uva-logo.png" />
-			<span class="tagline">April 11&mdash;13, 2013</span>
-			<div class="actions">
-				<input type="text" placeholder="hackr@school.edu">
-				<button class="signup">Notify me</button>
-				<a href="mailto:hackathon@virginia.edu" class="aux">or become a sponsor</a>
-			</div>
-		</aside>
-
-		<div class="main">
-
-			<div class="info">
-				<h3>Who?</h3>
-				<p>500 lucky undergraduate hackers. Sorry graduate students.</p>
-				<h3>When?</h3>
-				<p>We will be hacking near the end of the spring season on April 11th through 13th.</p>
-				<h3>Why?</h3>
-				<p><b>Prizes.</b> Lots and lots of prizes.</p>
-			</div>
-
-			<hr>
-			
-			<span class="fancy support">with support from</span>
-
-
-			<div class="sponsors">
-				<img class="rk" src="images/roomkey.png">
-				<img class="tedx" src="images/tedx.png">
-				<img class="acm" src="images/acm.png">
-				<img class="estud" src="images/estud.png">
-			</div>
-			<span class="fancy support">and many more!</span>
-		</div>
-
-		<div class="sliver"></div>
+		<div id="canvas"></div>
 
         <!-- Add your site or application content here -->
 
