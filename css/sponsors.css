@@ -13,6 +13,17 @@ body {
   background-color:#112222;
 }
 
+.hero {
+    background-color: #112;
+    padding-left: 10px;    
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border:1px solid;
+    border-radius:5px;
+    border-color: yellow;
+}
+
 #crown-img {
     width: 100px;
     fill: #f00;
@@ -85,7 +96,7 @@ a:hover {
 }
 
 .ui-tooltip, .arrow:after {
-    background: black;
+    background: #112;
     border: 2px solid #8f8f00;
 }
 .ui-tooltip {
@@ -93,7 +104,7 @@ a:hover {
     color: #e0f0f0;
     border-radius: 20px;
     font: 14px "Helvetica Neue", Sans-Serif;
-    box-shadow: 0 0 7px black;
+    box-shadow: 0 0 7px #112;
 }
 .arrow {
     width: 70px;
@@ -118,7 +129,7 @@ a:hover {
     top: -20px;
     width: 25px;
     height: 25px;
-    box-shadow: 6px 5px 9px -9px black;
+    box-shadow: 6px 5px 9px -9px #112;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
