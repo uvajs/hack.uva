@@ -1,2 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Fenix);
+
 body {
-  width: 100%; }
+  max-width: 100%;
+  width: 672px;
+  margin-left: auto; margin-right: auto;
+  margin-top: 50px;
+  margin-bottom:100px;
+  font-family: 'Fenix', serif;
+  font-size:20px;
+  color: #e0f0f0;
+  background-color:#112222;
+}
+
+#crown-img {
+    width: 100px;
+    fill: #f00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#funding-row {
+    background-color:#121; 
+}
+
+tr:nth-child(odd) { 
+    background-color:#122; 
+}
+
+tr:nth-child(even) { 
+    background-color:#112; 
+}
+
+.special-font {
+    font-style:italic;
+}
+
+.sponsorship-tiers {
+    margin-left: auto;
+    margin-right: auto;
+    width: 672px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+    color:           #f43;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tier {
+    font-family: 'Arvo', serif;
+    font-size:20px;
+    color: yellow;
+}
+
+.tier-desc {
+    font-family: 'Arvo', serif;
+    font-size:14px;
+}
+
