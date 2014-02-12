@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Fenix);
+
+body {
+  max-width: 100%;
+  width: 672px;
+  margin-left: auto; margin-right: auto;
+  margin-top: 50px;
+  margin-bottom:100px;
+  font-family: 'Fenix', serif;
+  font-size:20px;
+  color: #e0f0f0;
+  background-color:#112222;
+}
+
+.hero {
+    background-color: #112;
+    padding-left: 10px;    
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border:1px solid;
+    border-radius:5px;
+    border-color: yellow;
+}
+
+#logo {
+    width: 600px;
+    fill: #f00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.benefit {
+    color: #f43;
+    cursor: help;
+}
+.benefit:hover {
+    color:           #ff0;
+    text-decoration: none;
+}
+
+
+
+#funding-row {
+    background-color:#121; 
+}
+
+tr:nth-child(odd) { 
+    background-color:#122; 
+}
+
+tr:nth-child(even) { 
+    background-color:#112; 
+}
+
+.special-font {
+    font-style:italic;
+}
+
+.sponsorship-tiers {
+    margin-left: auto;
+    margin-right: auto;
+    width: 672px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+    color:           #f43;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tier {
+    font-family: 'Arvo', serif;
+    font-size:20px;
+    color: yellow;
+}
+
+.tier-desc {
+    font-family: 'Arvo', serif;
+    font-size:14px;
+}
+
+.ui-tooltip, .arrow:after {
+    background: #112;
+    border: 2px solid #8f8f00;
+}
+.ui-tooltip {
+    padding: 10px 20px;
+    color: #e0f0f0;
+    border-radius: 20px;
+    font: 14px "Helvetica Neue", Sans-Serif;
+    box-shadow: 0 0 7px #112;
+}
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+.arrow.left {
+    left: 20%;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px #112;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+}
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+
