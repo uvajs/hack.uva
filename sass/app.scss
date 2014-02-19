@@ -1,5 +1,7 @@
 @import 'colors';
 
+$button-radius: 5px;
+
 body {
 	height: 100%;
 }
@@ -27,12 +29,13 @@ header {
 nav {
     display: inline-block;
     float: right;
-
+    margin-right: 20px;
 }
 
+
 nav a {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: "proxima-nova";
     font-size: 25px;
     color: #AAAAAA;
@@ -45,14 +48,28 @@ nav a:hover {
 
 
 button {
-	background: $orange;
-	border-radius: 5px;
+	width: 400px;
+	height: 80px;
+	border-radius: $button-radius;
 	border: none;
+	position: relative;
+	z-index: 2;
+	color: white;
+	font-family: "Open Sans";
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
 
-	&:before {
-		content: "";
-		background: $orange - 20;
+.student-action {
+	background: $orange;
+	box-shadow: 0 .3em 0 $orange - 40;
+	text-shadow: 0 .2em 0 $orange - 30;
+}
 
-	}
-
+.sponsor-action {
+	background: $blue;
+	box-shadow: 0 .3em 0 $blue - 40;
+	text-shadow: 0 .2em 0 $blue - 30;
 }
