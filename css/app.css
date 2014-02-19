@@ -1,8 +1,11 @@
-body {
-  height: 100%; 
-}
+.background {
+  width: 100%; }
 
-#logo {
+
+body {
+  height: 100%; }
+
+.logo {
     width: 300px;
 }
 
@@ -11,7 +14,8 @@ nav {
 }
 
 a {
-/*    text-decoration:underline; */
+    color: #545454;
+    text-decoration:none;
     padding-bottom: 4px;
     border-bottom: 1px solid #E3D3E3;
 }
@@ -19,3 +23,5 @@ a {
 a:hover {
     border-bottom-color: orange;
 }
+
+
