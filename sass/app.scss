@@ -8,6 +8,29 @@ body {
   width: 100%;
 }
 
+.logo {
+    width: 300px;
+}
+
+nav {
+    display: inline-block
+}
+
+nav a {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "proxima-nova";
+    font-size: 40px;
+    color: #AAAAAA;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #7E7E7E;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color: #AAAAAA;
+    border-bottom: 4px solid orange;
+}
 
 
 button {
