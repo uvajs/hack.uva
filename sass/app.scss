@@ -1,18 +1,65 @@
 @import 'colors';
 
 $button-radius: 5px;
+$header-border: 3px;
 
 body {
 	height: 100%;
 }
 
 header {
-    height:100px; line-height:100px;
+    height:90px; 
+    border-bottom: $header-border solid $light-gray;
+	box-shadow: 2px 0 20px rgba(0,0,0,.2);
+	position: fixed;
+	background: white;
+	width: 100%;
+	opacity: .97;
+	z-index: 200;
+
+	&.small {
+		height: 60px;
+	}
+
+	nav {
+	    display: inline-block;
+	    float: right;
+	    margin-right: 20px;
+	    position: absolute;
+	    right: 0;
+	    height: 50px;
+	    bottom: 0;
+	    font-family: "Open Sans";
+	    font-size: 1.2em;
+	    font-weight: 100;
+
+	    
+	    a {
+	    	color: #b4b4b4;
+		    text-decoration:none;
+		    height: 100%;
+		    display: block;
+		    float: left;
+
+		    &.selected {
+		    	border-bottom: $header-border solid $orange;
+		    	color: $orange;
+		    }
+
+	    	span {
+	    		padding: 5px 45px;
+	    		height: 100%;
+	    		display: block;
+	    		box-sizing: border-box;
+	    	}
+	    }
+	}
 }
 
 .logo {
     width: 300px;
     vertical-align: middle;
+    padding: 8px;
 }
 
 .helper {
@@ -26,30 +73,58 @@ header {
 }
 
 
-nav {
-    display: inline-block;
-    float: right;
-    margin-right: 20px;
+.w {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.anchor {
+	position: relative;
+	top: -90px;
+	margin: 0;
+	padding: 0;
+	float: left;
 }
 
 
-nav a {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: "proxima-nova";
-    font-size: 25px;
-    color: #AAAAAA;
-    text-decoration:none;
+.main {
+
+	.call-to-action {
+		background: url(../images/rotunda-huge.jpg);
+		// background-position: 0 -100px;
+		background-size: cover;
+		width: 100%;
+		padding: 150px 0;
+
+		.intro-text {
+			color: white;
+			font-family: Gotham;
+			text-transform: uppercase;
+			font-weight: 100;
+			text-align: center;
+			font-size: 3.5em;
+			text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+
+			span {
+				font-weight: 900;
+				display: block;
+				font-size: 2em;
+
+			}
+		}
+
+		.buttons {
+			text-align: center;	
+		}
+	}
 }
 
-nav a:hover {
 
-}
-
-
-button {
-	width: 400px;
-	height: 80px;
+@mixin button($color) {
+	width: 350px;
+	padding: 0 60px;
+	height: 60px;
 	border-radius: $button-radius;
 	border: none;
 	position: relative;
@@ -57,19 +132,76 @@ button {
 	color: white;
 	font-family: "Open Sans";
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 1.3em;
 	font-weight: 700;
 	letter-spacing: 1px;
+	margin: 0 10px;
+	background: $color;
+	box-shadow: 0 .3em 0 $color - 40;
+	text-shadow: 0 .1em 0 $color - 30;
+	outline: none;
+
+	&:hover {
+		box-shadow: 0 .35em 0 $color - 40;
+		top: -.05em;
+		text-shadow: 0 .17em 0 $color - 30;
+	}
+
+	&:active {
+		text-shadow: 0 .07em 0 $color - 30;
+		box-shadow: 0 .15em 0 $color - 40;
+		top: .2em;
+	}
+
+
+}
+
+section.text {
+	box-shadow: -3px 0 20px rgba(0,0,0,.2);
+	padding-top: 10px;
+
+	.w {
+		width: 800px;
+		padding: 20px 0;
+		-webkit-column-count: 2;
+       -webkit-column-gap : 30px;
+       -webkit-column-break-inside:avoid;
+	}
+
+	a {
+		color: $blue;
+		padding: 1px 0;
+		border-bottom: 1px dotted;
+		text-decoration: none;
+
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+	
+	h2 {
+		margin-bottom: 5px; 
+		color: $light-gray - 40;
+		font-weight: 100;
+
+	}
+
+	h2 + p {
+		margin-top: 10px;
+	}
+
+	p {
+		line-height: 1.5em;
+		break-after: always;
+		display: inline-block;
+		color: black + 30;
+	}
 }
 
 .student-action {
-	background: $orange;
-	box-shadow: 0 .3em 0 $orange - 40;
-	text-shadow: 0 .2em 0 $orange - 30;
+	@include button($blue);
 }
 
 .sponsor-action {
-	background: $blue;
-	box-shadow: 0 .3em 0 $blue - 40;
-	text-shadow: 0 .2em 0 $blue - 30;
+	@include button($orange);
 }

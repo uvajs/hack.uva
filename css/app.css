@@ -2,12 +2,46 @@ body {
   height: 100%; }
 
 header {
-  height: 100px;
-  line-height: 100px; }
+  height: 90px;
+  border-bottom: 3px solid #d7d7d7;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  background: white;
+  width: 100%;
+  opacity: .97;
+  z-index: 200; }
+  header.small {
+    height: 60px; }
+  header nav {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    height: 50px;
+    bottom: 0;
+    font-family: "Open Sans";
+    font-size: 1.2em;
+    font-weight: 100; }
+    header nav a {
+      color: #b4b4b4;
+      text-decoration: none;
+      height: 100%;
+      display: block;
+      float: left; }
+      header nav a.selected {
+        border-bottom: 3px solid #ef9236;
+        color: #ef9236; }
+      header nav a span {
+        padding: 5px 45px;
+        height: 100%;
+        display: block;
+        box-sizing: border-box; }
 
 .logo {
   width: 300px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding: 8px; }
 
 .helper {
   display: inline-block;
@@ -17,22 +51,118 @@ header {
 .background {
   width: 100%; }
 
-nav {
-  display: inline-block;
-  float: right; }
+.w {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
 
-nav a {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: "proxima-nova";
-  font-size: 25px;
-  color: #AAAAAA;
-  text-decoration: none; }
+.anchor {
+  position: relative;
+  top: -90px;
+  margin: 0;
+  padding: 0;
+  float: left; }
 
-button {
-  background: #ef9236;
+.main .call-to-action {
+  background: url(../images/rotunda-huge.jpg);
+  background-size: cover;
+  width: 100%;
+  padding: 150px 0; }
+  .main .call-to-action .intro-text {
+    color: white;
+    font-family: Gotham;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+    .main .call-to-action .intro-text span {
+      font-weight: 900;
+      display: block;
+      font-size: 2em; }
+  .main .call-to-action .buttons {
+    text-align: center; }
+
+section.text {
+  box-shadow: -3px 0 20px rgba(0, 0, 0, 0.2);
+  padding-top: 10px; }
+  section.text .w {
+    width: 800px;
+    padding: 20px 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 30px;
+    -webkit-column-break-inside: avoid; }
+  section.text a {
+    color: #00aeef;
+    padding: 1px 0;
+    border-bottom: 1px dotted;
+    text-decoration: none; }
+    section.text a:hover {
+      border-bottom-style: solid; }
+  section.text h2 {
+    margin-bottom: 5px;
+    color: #afafaf;
+    font-weight: 100; }
+  section.text h2 + p {
+    margin-top: 10px; }
+  section.text p {
+    line-height: 1.5em;
+    break-after: always;
+    display: inline-block;
+    color: #1e1e1e; }
+
+.student-action {
+  width: 350px;
+  padding: 0 60px;
+  height: 60px;
   border-radius: 5px;
-  border: none; }
-  button:before {
-    content: "";
-    background: #db7e22; }
+  border: none;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 10px;
+  background: #00aeef;
+  box-shadow: 0 0.3em 0 #0086c7;
+  text-shadow: 0 0.1em 0 #0090d1;
+  outline: none; }
+  .student-action:hover {
+    box-shadow: 0 0.35em 0 #0086c7;
+    top: -.05em;
+    text-shadow: 0 0.17em 0 #0090d1; }
+  .student-action:active {
+    text-shadow: 0 0.07em 0 #0090d1;
+    box-shadow: 0 0.15em 0 #0086c7;
+    top: .2em; }
+
+.sponsor-action {
+  width: 350px;
+  padding: 0 60px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 10px;
+  background: #ef9236;
+  box-shadow: 0 0.3em 0 #c76a0e;
+  text-shadow: 0 0.1em 0 #d17418;
+  outline: none; }
+  .sponsor-action:hover {
+    box-shadow: 0 0.35em 0 #c76a0e;
+    top: -.05em;
+    text-shadow: 0 0.17em 0 #d17418; }
+  .sponsor-action:active {
+    text-shadow: 0 0.07em 0 #d17418;
+    box-shadow: 0 0.15em 0 #c76a0e;
+    top: .2em; }
