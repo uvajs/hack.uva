@@ -3,5 +3,19 @@ body {
 }
 
 #logo {
-    
+    width: 300px;
+}
+
+nav {
+    display: inline-block;
+}
+
+a {
+/*    text-decoration:underline; */
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E3D3E3;
+}
+
+a:hover {
+    border-bottom-color: orange;
 }
