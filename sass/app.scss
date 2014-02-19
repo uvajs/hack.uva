@@ -17,9 +17,9 @@ header {
 	opacity: .97;
 	z-index: 200;
 
-	&.small {
-		height: 60px;
-	}
+	// &.small {
+	// 	height: 60px;
+	// }
 
 	nav {
 	    display: inline-block;
@@ -56,10 +56,24 @@ header {
 	}
 }
 
+footer {
+	display: none;
+	height: 300px;
+	background: $light-gray;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1);
+	border-bottom: $light-gray - 30 solid 5px;
+	border-top: $light-gray - 60 solid 1px;
+}
+
 .logo {
-    width: 300px;
+	background: url(../images/hackuva.png) no-repeat;
+	background-size: contain;
     vertical-align: middle;
-    padding: 8px;
+    height: 77%;
+	box-sizing: border-box;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
 }
 
 .helper {
@@ -77,6 +91,7 @@ header {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
+	height: 100%;
 }
 
 .anchor {
@@ -152,8 +167,6 @@ header {
 		box-shadow: 0 .15em 0 $color - 40;
 		top: .2em;
 	}
-
-
 }
 
 section.text {

@@ -10,8 +10,6 @@ header {
   width: 100%;
   opacity: .97;
   z-index: 200; }
-  header.small {
-    height: 60px; }
   header nav {
     display: inline-block;
     float: right;
@@ -38,10 +36,23 @@ header {
         display: block;
         box-sizing: border-box; }
 
+footer {
+  display: none;
+  height: 300px;
+  background: #d7d7d7;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: #b9b9b9 solid 5px;
+  border-top: #9b9b9b solid 1px; }
+
 .logo {
-  width: 300px;
+  background: url(../images/hackuva.png) no-repeat;
+  background-size: contain;
   vertical-align: middle;
-  padding: 8px; }
+  height: 77%;
+  box-sizing: border-box;
+  width: 300px;
+  float: left;
+  margin-top: 10px; }
 
 .helper {
   display: inline-block;
@@ -54,7 +65,8 @@ header {
 .w {
   width: 1200px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .anchor {
   position: relative;
