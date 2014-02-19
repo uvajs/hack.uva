@@ -7,3 +7,18 @@ body {
 .background {
   width: 100%;
 }
+
+
+
+button {
+	background: $orange;
+	border-radius: 5px;
+	border: none;
+
+	&:before {
+		content: "";
+		background: $orange - 20;
+
+	}
+
+}

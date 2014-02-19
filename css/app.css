@@ -3,3 +3,11 @@ body {
 
 .background {
   width: 100%; }
+
+button {
+  background: #ef9236;
+  border-radius: 5px;
+  border: none; }
+  button:before {
+    content: "";
+    background: #db7e22; }
