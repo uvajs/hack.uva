@@ -1,0 +1,38 @@
+body {
+  height: 100%; }
+
+header {
+  height: 100px;
+  line-height: 100px; }
+
+.logo {
+  width: 300px;
+  vertical-align: middle; }
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.background {
+  width: 100%; }
+
+nav {
+  display: inline-block;
+  float: right; }
+
+nav a {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "proxima-nova";
+  font-size: 25px;
+  color: #AAAAAA;
+  text-decoration: none; }
+
+button {
+  background: #ef9236;
+  border-radius: 5px;
+  border: none; }
+  button:before {
+    content: "";
+    background: #db7e22; }
