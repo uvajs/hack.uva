@@ -1,15 +1,22 @@
-// $(function() {
-// 	$header = $('header');
+$(function() {
+	$header = $('header');
 
-// 	$(window).on("scroll", function() {
-// 		var scrollTop = $(window).scrollTop();
-// 		if ((scrollTop < 5)) {
-// 			$header.removeClass('small');
-// 			$header.animate({height: "80px"}, 100);
-// 		}
-// 		else if (!$header.hasClass('small')) {
-// 			$header.addClass('small');
-// 			$header.animate({height: "60px"}, 100);
-// 		}
-// 	});
-// });
+	console.log();
+
+	var pos = {};
+
+	$('.anchor').each(function(i, item) {
+		var $item = $(item),
+			name = $(item).attr('name');
+		
+		pos[name] = $item.position().top;
+	});
+
+	console.log(pos);
+
+
+	$(window).on("scroll", function() {
+		var scrollTop = $(window).scrollTop();
+
+	});
+});

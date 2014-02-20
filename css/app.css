@@ -4,11 +4,10 @@ body {
 header {
   height: 90px;
   border-bottom: 3px solid #d7d7d7;
-  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.2);
   position: fixed;
   background: white;
   width: 100%;
-  opacity: .97;
+  opacity: 1;
   z-index: 200; }
   header nav {
     display: inline-block;
@@ -62,7 +61,7 @@ footer {
 .background {
   width: 100%; }
 
-.w {
+.w, .sponsors {
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -74,6 +73,8 @@ footer {
   margin: 0;
   padding: 0;
   float: left; }
+  .anchor[name="home"] {
+    top: 0; }
 
 .main .call-to-action {
   background: url(../images/rotunda-huge.jpg);
@@ -96,14 +97,15 @@ footer {
     text-align: center; }
 
 section.text {
-  box-shadow: -3px 0 20px rgba(0, 0, 0, 0.2);
   padding-top: 10px; }
-  section.text .w {
+  section.text .w, section.text .sponsors {
     width: 800px;
     padding: 20px 0;
     -webkit-column-count: 2;
     -webkit-column-gap: 30px;
     -webkit-column-break-inside: avoid; }
+  section.text h2:first-child {
+    margin-top: 0; }
   section.text a {
     color: #00aeef;
     padding: 1px 0;
@@ -122,6 +124,45 @@ section.text {
     break-after: always;
     display: inline-block;
     color: #1e1e1e; }
+
+.sponsors {
+  line-height: 150px;
+  width: 700px;
+  padding: 0 20px;
+  text-align: center;
+  box-sizing: border-box; }
+
+.fancy {
+  font-family: "teimer-web";
+  font-style: italic; }
+
+.sponsor.aux {
+  text-align: center;
+  color: #d7d7d7;
+  font-size: 22px;
+  font-weight: 100;
+  display: block;
+  margin: 20px auto;
+  width: 700px;
+  position: relative; }
+
+img {
+  padding: 10px 20px;
+  width: 250px;
+  position: relative;
+  vertical-align: middle; }
+
+img.acm {
+  width: 120px;
+  padding-top: 20px; }
+
+img.estud {
+  width: 400px;
+  max-width: 80%;
+  padding-top: 10px; }
+
+img.rk {
+  width: 220px; }
 
 .student-action {
   width: 350px;

@@ -33,7 +33,7 @@ body {
 }
 
 .benefit {
-    color: #f43;
+    color: #fb8510;
     cursor: help;
 }
 .benefit:hover {
@@ -76,7 +76,7 @@ a:link,
 a:active,
 a:visited,
 a:hover {
-    color:           #f43;
+    color:           #fb8510;
     text-decoration: none;
 }
 

@@ -35,13 +35,15 @@
             <div class="w">
                 <div class="logo"></div>
                 <nav>
-                  <a href="#" class="selected"><span>Home</span></a>
-                  <a href="#faq"><span>FAQ</span></a>
-                  <a href="#sponsors"><span>Sponsors</span></a>
-                  <a href="#apply"><span>Apply</span></a>
+                    <a data-for="home" href="#home" class="selected"><span>Home</span></a>
+                    <a data-for="faq" href="#faq"><span>FAQ</span></a>
+                    <a data-for="sponsors" href="#sponsors"><span>Sponsors</span></a>
+                    <a data-for="apply" href="#apply"><span>Apply</span></a>
                 </nav> 
             </div>
         </header>
+
+    <a class="anchor" name="home"></a>
 
 	<section class="main">
         <section class="call-to-action">
@@ -83,21 +85,30 @@
                     <p>The judges will evaluate your hack based off <strong>creativity</strong>, <strong>polish</strong>, and <strong>usefulness</strong>. Succeed in all three categories, and you're bound to win!</p>
             </div>
         </section>
+        <a class="anchor" name="sponsors"></a>
+        <span class="sponsor aux">sponsored by</span>
+        <div class="sponsors">
+            <img class="its" src="images/its.png">
+            <img class="ebay" src="images/ebay.png">
+            <img class="willowtree" src="images/willowtree.png">
+            <img class="acm" src="images/acm.png">
+            <img class="estud" src="images/estud.png">
+            <img class="tedx" src="images/tedx.png">
+            <img class="rk" src="images/roomkey.png">
+            <img class="epic" src="images/epic.png">
+        </div>
     </section>
+
+
     <footer>
         <div class="w">
             
         </div>
+
     </footer>
-
-
-
-
-        <script type="text/javascript" src="http://use.typekit.net/wbu7hjf.js"></script>
+    
+        <script type="text/javascript" src="//use.typekit.net/wbu7hjf.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-        <script src="js/vendor/zepto.min.js"></script>
-        <script src="js/helper.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

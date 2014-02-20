@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Asap);
+
 body, html {
 	margin: 0;
 	min-height: 480px;
@@ -23,8 +25,30 @@ body, html {
 }
 
 .logo {
-	width: 250px;
+	width: 500px;
 	margin-top: 60px;
+}
+
+.logo2 {
+    width: 500px;
+    min-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+    color:           #16a1ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .tagline {
@@ -50,7 +74,7 @@ body, html {
 	width: 100%;
 	display: block;
 	text-align: center;
-	color: #C9C9C9;
+	color: #898989;
 	margin-top: 30px;
 	font-weight: 100;
 	text-shadow: 0 1px 0 #FFF;
@@ -88,10 +112,25 @@ button {
 	box-shadow: 0 0 30px #FA861B;
 }
 
+.faq {
+	clear: left;
+	padding: 10px 30px;
+	margin-bottom: 100px;
+	color: #333;
+	margin-top: 30px;
+}
+.faq h2 {
+    font-weight: 100;
+    font-family: 'Asap', sans-serif;
+    margin-top: 25px;
+}
+
+
 .info {
 	column-count: 3;
 	-webkit-column-count: 3;
 	clear: left;
+        height: 300px;
 	padding: 10px 30px;
 	margin-bottom: 100px;
 	color: #333;

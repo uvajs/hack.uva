@@ -10,11 +10,11 @@ body {
 header {
     height:90px; 
     border-bottom: $header-border solid $light-gray;
-	box-shadow: 2px 0 20px rgba(0,0,0,.2);
+	// box-shadow: 2px 0 20px rgba(0,0,0,.2);
 	position: fixed;
 	background: white;
 	width: 100%;
-	opacity: .97;
+	opacity: 1;
 	z-index: 200;
 
 	// &.small {
@@ -100,6 +100,10 @@ footer {
 	margin: 0;
 	padding: 0;
 	float: left;
+
+	&[name="home"] {
+		top: 0;
+	}
 }
 
 
@@ -170,7 +174,7 @@ footer {
 }
 
 section.text {
-	box-shadow: -3px 0 20px rgba(0,0,0,.2);
+	//box-shadow: -3px 0 20px rgba(0,0,0,.2);
 	padding-top: 10px;
 
 	.w {
@@ -179,6 +183,10 @@ section.text {
 		-webkit-column-count: 2;
        -webkit-column-gap : 30px;
        -webkit-column-break-inside:avoid;
+	}
+
+	h2:first-child {
+		margin-top: 0;
 	}
 
 	a {
@@ -209,6 +217,73 @@ section.text {
 		display: inline-block;
 		color: black + 30;
 	}
+}
+
+.sponsors {
+	@extend .w;
+
+	line-height: 150px;
+	width: 700px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.fancy {
+	font-family: "teimer-web";
+	font-style: italic;
+}
+
+.sponsor.aux {
+	text-align: center;
+	color: $light-gray;
+	font-size: 22px;
+	font-weight: 100;
+	display: block;
+	margin: 20px auto;
+	width: 700px;
+	position: relative;
+
+	// &:before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	left: 85px;
+	// 	top: 13px;
+	// 	width: 175px;
+	// 	height: 1px;
+	// 	background: $light-gray;
+	// }
+	// &:after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	right: 85px;
+	// 	top: 13px;
+	// 	width: 175px;
+	// 	height: 1px;
+	// 	background: $light-gray;
+	// }
+}
+
+
+img {
+	padding: 10px 20px;
+	width: 250px;
+	position: relative;
+	vertical-align: middle;
+}
+
+img.acm {
+	width: 120px;
+	padding-top: 20px;
+}
+img.estud {
+	width: 400px;
+	max-width: 80%;
+	padding-top: 10px;
+}
+
+img.rk {
+	width: 220px;
 }
 
 .student-action {
