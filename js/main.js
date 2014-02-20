@@ -1,22 +1,35 @@
 $(function() {
 	$header = $('header');
+	$navLinks = $header.find('nav a');
 
 	console.log();
 
-	var pos = {};
+	var anchors = {};
 
 	$('.anchor').each(function(i, item) {
 		var $item = $(item),
 			name = $(item).attr('name');
 		
-		pos[name] = $item.position().top;
+		anchors[name] = $item.position().top;
 	});
-
-	console.log(pos);
 
 
 	$(window).on("scroll", function() {
-		var scrollTop = $(window).scrollTop();
+		var scrollTop = $(window).scrollTop(),
+			selected = "home";
+
+		for (key in anchors) {
+			if (scrollTop < anchors[key] - 1) {
+				break;
+			}
+			else {
+				selected = key;
+			}
+		}
+
+		$navLinks.removeClass("selected").filter('[data-for='+ selected +']').addClass("selected");
+
+		
 
 	});
 });
