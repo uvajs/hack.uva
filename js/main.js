@@ -1,8 +1,8 @@
-$(function() {
+setTimeout(function() {
 	$header = $('header');
 	$navLinks = $header.find('nav a');
 
-	console.log();
+	console.log('yolo');
 
 	var anchors = {};
 
@@ -28,8 +28,6 @@ $(function() {
 		}
 
 		$navLinks.removeClass("selected").filter('[data-for='+ selected +']').addClass("selected");
-
-		
-
 	});
-});
+
+}, 500);

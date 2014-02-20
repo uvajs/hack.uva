@@ -83,7 +83,7 @@ footer {
   padding: 150px 0; }
   .main .call-to-action .intro-text {
     color: white;
-    font-family: Gotham;
+    font-family: "proxima-nova";
     text-transform: uppercase;
     font-weight: 100;
     text-align: center;
@@ -173,7 +173,7 @@ img.rk {
   position: relative;
   z-index: 2;
   color: white;
-  font-family: "Open Sans";
+  font-family: "proxima-nova";
   text-transform: uppercase;
   font-size: 1.3em;
   font-weight: 700;
@@ -201,7 +201,7 @@ img.rk {
   position: relative;
   z-index: 2;
   color: white;
-  font-family: "Open Sans";
+  font-family: "proxima-nova";
   text-transform: uppercase;
   font-size: 1.3em;
   font-weight: 700;
