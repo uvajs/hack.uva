@@ -20,7 +20,7 @@ body {
 }
 
 .hero {
-    background-color: #d7d7d7;
+    background-color: #ededed;
     padding-left: 10px;    
     padding-right: 10px;
     padding-top: 2px;
@@ -59,7 +59,7 @@ tr:nth-child(odd) {
 }
 
 tr:nth-child(even) { 
-    background-color:#d7d7d7;
+    background-color:#e7e7e7;
 }
 
 .special-font {
