@@ -9,19 +9,25 @@ body {
   margin-bottom:100px;
   font-family: 'Fenix', serif;
   font-size:20px;
-  color: #e0f0f0;
-  background-color:#112222;
+  background-color:white;
+}
+
+.logo {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero {
-    background-color: #112;
+    background-color: #d7d7d7;
     padding-left: 10px;    
     padding-right: 10px;
     padding-top: 2px;
     padding-bottom: 5px;
     border:1px solid;
     border-radius:5px;
-    border-color: yellow;
+    border-color: #ef9236;
 }
 
 #crown-img {
@@ -33,26 +39,27 @@ body {
 }
 
 .benefit {
-    color: #fb8510;
+    color: #00aeef;
     cursor: help;
+    font-size: 20px;
 }
 .benefit:hover {
-    color:           #ff0;
+    color:           #ef9236;
     text-decoration: none;
 }
 
 
 
 #funding-row {
-    background-color:#121; 
+    background-color:#dfd; 
 }
 
 tr:nth-child(odd) { 
-    background-color:#122; 
+    background-color:white; 
 }
 
 tr:nth-child(even) { 
-    background-color:#112; 
+    background-color:#d7d7d7;
 }
 
 .special-font {
@@ -76,7 +83,7 @@ a:link,
 a:active,
 a:visited,
 a:hover {
-    color:           #fb8510;
+    color:           #00aeef;
     text-decoration: none;
 }
 
@@ -87,7 +94,6 @@ a:hover {
 .tier {
     font-family: 'Arvo', serif;
     font-size:20px;
-    color: yellow;
 }
 
 .tier-desc {
@@ -96,13 +102,12 @@ a:hover {
 }
 
 .ui-tooltip, .arrow:after {
-    background: #112;
-    border: 2px solid #8f8f00;
+    background: white;
+    border: 2px solid #a7a7a7;
 }
 .ui-tooltip {
     padding: 10px 20px;
-    color: #e0f0f0;
-    border-radius: 20px;
+    border-radius: 10px;
     font: 14px "Helvetica Neue", Sans-Serif;
     box-shadow: 0 0 7px #112;
 }
