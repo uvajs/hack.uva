@@ -2,8 +2,6 @@ setTimeout(function() {
 	$header = $('header');
 	$navLinks = $header.find('nav a');
 
-	console.log('yolo');
-
 	var anchors = {};
 
 	$('.anchor').each(function(i, item) {
