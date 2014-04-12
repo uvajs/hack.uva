@@ -1,4 +1,5 @@
 import os
+import twilio
 from twilio import rest
 
 abspath = os.path.abspath(__file__)
@@ -20,10 +21,13 @@ def send_message(text, debug=True):
 
     for number in numbers:
         print number
-        message = client.sms.messages.create(body=text,
+        try:
+            message = client.sms.messages.create(body=text,
             to=number,
             from_="+14438981316")
+        except twilio.TwilioRestException:
+            continue
 
 
 if __name__ == "__main__":
-    pass
+    send_message("SUBWAY IN THE MAIN LOUNGE. yeyeah.", debug=False)
