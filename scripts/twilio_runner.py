@@ -11,9 +11,13 @@ auth_token = os.environ['TWILIO_TOKEN']
 client = rest.TwilioRestClient(account_sid, auth_token)
 
 
-def send_message(text):
+def send_message(text, debug=True):
     f = open('phones.csv')
     numbers = f.read().split('\r')
+
+    if debug:
+        numbers = ["7035992135", "7033002527"]
+
     for number in numbers:
         print number
         message = client.sms.messages.create(body=text,
