@@ -15,6 +15,7 @@ def send_message(text):
     f = open('phones.csv')
     numbers = f.read().split('\r')
     for number in numbers:
+        print number
         message = client.sms.messages.create(body=text,
             to=number,
             from_="+14438981316")
