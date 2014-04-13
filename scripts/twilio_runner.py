@@ -30,4 +30,4 @@ def send_message(text, debug=True):
 
 
 if __name__ == "__main__":
-    send_message("SUBWAY IN THE MAIN LOUNGE. yeyeah.", debug=False)
+    pass
