@@ -97,7 +97,13 @@ footer {
 
 
 .w {
-	width: 1200px;
+	width: 85%;
+	@media screen and (max-width: 1130px) {
+		width:90%;
+	}
+	@media screen and (max-width: 1000px) {
+		width:100%;
+	}
 	margin: 0 auto;
 	position: relative;
 	height: 100%;
