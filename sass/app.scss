@@ -1,4 +1,5 @@
 @import 'colors';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 $button-radius: 5px;
 $header-border: 3px;
@@ -62,7 +63,7 @@ header {
 	    		box-sizing: border-box;
 				@media screen and (max-width: 900px) {
 					padding:15px 10px;
-					font-size: 1em;
+					font-size: 0.8em;
 				}
 	    	}
 	    }
