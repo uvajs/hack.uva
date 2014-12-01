@@ -87,6 +87,13 @@ footer {
 	width: 300px;
 	float: left;
 	margin-top: 10px;
+	@media screen and (max-width: 900px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 620px) {
+		background-position: center;
+		height:40%;
+	}
 }
 
 .helper {
