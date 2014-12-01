@@ -45,6 +45,11 @@ header {
 		    display: block;
 		    float: left;
 
+		    @media screen and (max-width: 620px) {
+				display: inline-block;
+				float: none;
+			}
+
 		    &.selected {
 		    	border-bottom: $header-border solid $orange;
 		    	color: $orange;
