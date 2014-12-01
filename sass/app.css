@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
   height: 100%; }
 
@@ -49,7 +50,7 @@ header {
         @media screen and (max-width: 900px) {
           header nav a span {
             padding: 15px 10px;
-            font-size: 1em; } }
+            font-size: 0.8em; } }
 
 footer {
   display: none;
