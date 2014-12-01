@@ -60,6 +60,10 @@ header {
 	    		height: 100%;
 	    		display: block;
 	    		box-sizing: border-box;
+				@media screen and (max-width: 900px) {
+					padding:5px 10px;
+					font-size: 1em;
+				}
 	    	}
 	    }
 	}
