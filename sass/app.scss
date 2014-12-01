@@ -190,8 +190,12 @@ section.text {
 		width: 800px;
 		padding: 20px 0;
 		-webkit-column-count: 2;
-       -webkit-column-gap : 30px;
-       -webkit-column-break-inside:avoid;
+        -webkit-column-gap : 30px;
+        -webkit-column-break-inside:avoid;
+        @media screen and (max-width: 810px) {
+            -webkit-column-count: 1;
+            width:85%;
+        }
 	}
 
 	h2:first-child {
