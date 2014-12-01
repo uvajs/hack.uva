@@ -48,7 +48,7 @@ header {
         box-sizing: border-box; }
         @media screen and (max-width: 900px) {
           header nav a span {
-            padding: 5px 10px;
+            padding: 15px 10px;
             font-size: 1em; } }
 
 footer {
@@ -126,6 +126,9 @@ footer {
       font-weight: 900;
       display: block;
       font-size: 2em; }
+      @media screen and (max-width: 635px) {
+        .main .call-to-action .intro-text span {
+          font-size: 1.5em; } }
   .main .call-to-action .buttons {
     text-align: center; }
 
@@ -182,6 +185,9 @@ section.text {
   margin: 20px auto;
   width: 100%;
   position: relative; }
+  @media screen and (max-width: 635px) {
+    .sponsor.aux {
+      font-size: 1em; } }
 
 img {
   padding: 10px 20px;
