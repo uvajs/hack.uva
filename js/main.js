@@ -8,7 +8,7 @@ setTimeout(function() {
 		var $item = $(item),
 			name = $(item).attr('name');
 		
-		anchors[name] = $item.position().top;
+		anchors[name] = $item.offset().top;
 	});
 
 
