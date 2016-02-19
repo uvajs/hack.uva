@@ -1,252 +1,193 @@
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <script type="text/javascript">
-          (function(d) {
-            var config = {
-              kitId: 'wbu7hjf',
-              scriptTimeout: 3000
-            },
-            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-          })(document);
-        </script>
-        <meta charset="utf-8">
-        <title>hack.uva</title>
-        <meta name="description" content="">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="cleartype" content="on">
+<head>
+  <script type="text/javascript">
+    (function(d) {
+      var config = {
+        kitId: 'wbu7hjf',
+        scriptTimeout: 3000
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <meta charset="utf-8">
+  <title>hack.uva</title>
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
 
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
 
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
-        <meta name="msapplication-TileColor" content="#222222">
-
-
-		<script src="./bower_components/Snap.svg/dist/snap.svg.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-		<script src="./js/main.js"></script>
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/app.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    </head>
-    <body>
-        <header>
-            <div class="w">
-                <div class="logo"></div>
-                <nav>
-                    <a data-for="home" href="#home" class="selected"><span>Home</span></a>
-                    <a data-for="schedule" href="#schedule"><span>Schedule</span></a>
-                    <a data-for="faq" href="#faq"><span>FAQ</span></a>
-                    <a data-for="sponsors" href="#sponsors"><span>Sponsors</span></a>
-                    <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"><span>Code of Conduct</span></a>
-                </nav>
-            </div>
-        </header>
-
-    <a class="anchor" name="home"></a>
-
-	<section class="main">
-        <section class="call-to-action">
-            <h1 class="intro-text">
-                The Second Annual
-                <span>Hack.UVA</span>
-                February 28&mdash; March 1, 2015
-            </h1>
-        </section>
-        <a class="anchor" name="faq"></a>
-        <section class="text">
-            <div class="w">
-                    <h2>What is Hack.UVA?</h2>
-                    <p>A <strong>24-hour</strong> programming event held from <strong>February 28th - March 1st</strong> where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. <strong>Prizes</strong> will be awarded to the top hacks. There is <strong>no entrance fee,</strong> all <strong>meals are free</strong>, and we will help you out with <strong>transportation</strong>. Get over here!</p>
-
-                    <h2>Who can attend?</h2>
-                    <p>Hack.UVA welcomes all current students. If you are an organization interested in sponsoring the event, please contact <a href="mailto:hackathon@virginia.edu">hackathon@virginia.edu</a>.</p>
-
-                    <h2>When can I register?</h2>
-                    <p>Unfortunately we have closed registration at this time, as the event is upon us in the following days!</p>
-
-                    <h2>Can I come even if I’m inexperienced?</h2>
-                    <p>Hack.UVA is a great opportunity for new hackers. There will be tech talks and personal support from mentors at the event.</p>
-
-                    <h2>Travel reimbursement?</h2>
-                    <p>We will be reimbursing in full up to $50 for all hackers. Please bring all original receipts to registration!</p>
-
-                    <h2>How big can my team be?</h2>
-                    <p>Between 3 and 7 feet tall. But seriously, you may work in a team with up to four people.</p>
-
-                    <h2>What should I bring?</h2>
-                    <p>Bring your laptop, phone, and chargers!</p>
-
-                    <h2>How does judging work?</h2>
-                    <p>The judges will evaluate your hack based off <strong>creativity</strong>, <strong>polish</strong>, and <strong>technical vigor</strong>. Succeed in all three categories, and you're bound to win!</p>
-                    <a class="anchor" name="schedule"></a>
-                    <h2>Schedule</h2>
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#222222">
 
 
+  <script src="./bower_components/Snap.svg/dist/snap.svg.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-                    <b>Saturday, February 28th</b>
+  <script src="./js/main.js"></script>
 
-                    <table>
-                      <tr>
-                        <td>10-11am</td>
-                        <td>Registration</td>
-                        <td>Ballroom</td>
-                      </tr>
-                      <tr>
-                        <td>11-11:30am</td>
-                        <td>Opening Notes</td>
-                        <td>Ballroom<br></td>
-                      </tr>
-                      <tr>
-                        <td>11:30am</td>
-                        <td>Lunch</td>
-                        <td>Main Lounge<br></td>
-                      </tr>
-                      <tr>
-                        <td>11:30am</td>
-                        <td><b>HACKING BEGINS</b></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>1-2pm</td>
-                        <td>The Lean Startup</td>
-                        <td>South Meeting Room</td>
-                      </tr>
-                      <tr>
-                        <td>2-3pm</td>
-                        <td>Intro to JavaScript</td>
-                        <td>South Meeting Room</td>
-                      </tr>
-                      <tr>
-                        <td>3-3:30pm</td>
-                        <td>Intro to Agile</td>
-                        <td>South Meeting Room</td>
-                      </tr>
-                      <tr>
-                        <td>3:30-4pm</td>
-                        <td>Intro to Signal</td>
-                        <td>South Meeting Room</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>Processing</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>5:30pm</td>
-                        <td>Dinner</td>
-                        <td>Main Lounge</td>
-                      </tr>
-                    </table>
-                    <br>
-                    <b>Sunday, March 1st</b>
-                    <table>
-                      <tr>
-                        <td>12am</td>
-                        <td>Snacks</td>
-                        <td>Main Lounge</td>
-                      </tr>
-                      <tr>
-                        <td>3am</td>
-                        <td>Snacks</td>
-                        <td>Main Lounge</td>
-                      </tr>
-                      <tr>
-                        <td>8am</td>
-                        <td>Breakfast</td>
-                        <td>Main Lounge</td>
-                      </tr>
-                      <tr>
-                        <td>11:30am</td>
-                        <td><b>HACKING ENDS</b></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>11:30-45am</td>
-                        <td>Demo setup</td>
-                        <td>Ballroom</td>
-                      </tr>
-                      <tr>
-                        <td>11:45-1:30pm</td>
-                        <td>Demos</td>
-                        <td>Ballroom</td>
-                      </tr>
-                      <tr>
-                        <td>1pm</td>
-                        <td>Lunch</td>
-                        <td>Main Lounge</td>
-                      </tr>
-                      <tr>
-                        <td>2-3pm</td>
-                        <td>Final Demos</td>
-                        <td>Ballroom</td>
-                      </tr>
-                    </table>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="w">
+      <div class="logo"></div>
+      <nav>
+        <a data-for="home" href="#home" class="selected"><span>Home</span></a>
+        <a data-for="schedule" href="#schedule"><span>Schedule</span></a>
+        <a data-for="faq" href="#faq"><span>FAQ</span></a>
+        <a data-for="sponsors" href="#sponsors"><span>Sponsors</span></a>
+        <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"><span>Code of Conduct</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <a class="anchor" name="home"></a>
+
+  <section class="main">
+    <section class="call-to-action">
+      <h1 class="intro-text">
+        The Third Annual
+        <span>Hack.UVA</span>
+        Spring 2016
+      </h1>
+    </section>
+    <a class="anchor" name="faq"></a>
+    <section class="text">
+      <div class="w">
+        <h2>What is Hack.UVA?</h2>
+        <p>A <strong>24-hour</strong> programming event held in <strong>Spring 2016</strong> where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. <strong>Prizes</strong> will be awarded to the top hacks. There is <strong>no entrance fee,</strong> all <strong>meals are free</strong>, and we will help you out with <strong>transportation</strong>. Get over here!</p>
+
+        <h2>Who can attend?</h2>
+        <p>Hack.UVA welcomes all current students. If you are an organization interested in sponsoring the event, please contact <a href="mailto:hackathon@virginia.edu">hackathon@virginia.edu</a>.</p>
+
+        <h2>When can I register?</h2>
+        <p>Registration will be opening soon!</p>
+
+        <h2>Can I come even if I’m inexperienced?</h2>
+        <p>Hack.UVA is a great opportunity for new hackers. There will be tech talks and personal support from mentors at the event.
+        </p>
+
+        <h2>Travel reimbursement?</h2>
+        <p>We will be reimbursing in full up to $50 for all hackers. Please bring all original receipts to registration!</p>
+
+        <h2>How big can my team be?</h2>
+        <p>Between 3 and 7 feet tall. But seriously, you may work in a team with up to four people.</p>
+
+        <h2>What should I bring?</h2>
+        <p>Bring your laptop, phone, and chargers!</p>
+
+        <h2>How does judging work?</h2>
+        <p>The judges will evaluate your hack based off <strong>creativity</strong>, <strong>polish</strong>, and <strong>technical vigor</strong>. Succeed in all three categories, and you're bound to win!</p>
+        <a class="anchor" name="schedule"></a>
+        
+
+      </div>
+    </section>
+    <section>
+      <div>
+        <div class="centered">
+          <h1>Schedule</h1>
+          <b>Saturday</b>
+        </div>
+        <table class="schedule">          
+          <tr>
+            <td>11:00am</td>
+            <td>Registration Begins</td>
+          </tr>
+          <tr>
+            <td>12:30pm</td>
+            <td><b>HACKING BEGINS</b></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5:30pm</td>
+            <td>Dinner</td>
+          </tr>
+          <tr>
+            <td>10:00pm </td>
+            <td>Doors Close</td>
+          </tr>
+        </table>
+        <br>
+        <div class="centered">
+          <b>Sunday</b>
+        </div>
+        <table class="schedule">   
+            <tr>
+              <td>12:00am</td>
+              <td>Snacks</td>
+            </tr>
+            <tr>
+              <td>3:00am</td>
+              <td>Snacks</td>
+            </tr>
+            <tr>
+              <td>8:00am</td>
+              <td>Breakfast</td>
+            </tr>
+            <tr>
+              <td>12:30pm</td>
+              <td><b>HACKING ENDS</b></td>
+            </tr>
+            <tr>
+              <td>1:00pm</td>
+              <td>Demos</td>
+            </tr>
+            <tr>
+              <td>3:00pm</td>
+              <td>Awards</td>
+            </tr>
+          </table>
+        </div>
+      </section>
 
 
 
-            </div>
-        </section >
-            <a class="anchor" name="sponsors"></a>
-            <h1 style="text-align:center">Sponsored by</h1>
-        <div class="sponsors">
-            <img class="ebay" src="images/ebay.png">
-            <img class="willowtree" src="images/willowtree.png">
-            <img src="images/geico.png">
+      <a class="anchor" name="sponsors"></a>
+      <h1 style="text-align:center">Sponsored by</h1>
+      <div class="sponsors">
+        Coming Soon!
+      </div>
 
-            <img class="capitalone" src="images/capitalone.jpg">
-            <img class="counterpoint" src="images/counterpoint.png">
-            <img class="axios" src="images/axios.png">
-            <img class="swift "src="images/swift.png">
-            <img class="cos" src="images/cos.png">
-
-            <img class="thiel" src="images/thiel.png">
-            <img src="images/trackmaven.png">
-            <img class="namecheap" src="images/namecheap.png">
-
-            <img src="images/ventera.png">
-       </div>
-
-            <h2 class="sponsor aux">In Partnership with</h2>
-            <div class="sponsors">
-            <img class="acm" src="images/acm.png">
-            <img class="mlh" src="images/mlh.png">
-            <img class="its" src="images/its.png">
-            <img src="images/thalmic_brand.svg">
-            </div>
-        <p class="sponsor aux">Interested in sponsoring? Let us <a href="mailto:hackathon@virginia.edu">know</a>.</p>
+      <h2 class="sponsor aux">In Partnership with</h2>
+      <div class="sponsors">
+        Coming Soon!
+      </div>
+      <p class="sponsor aux">Interested in sponsoring? Let us <a href="mailto:hackathon@virginia.edu">know</a>.</p>
     </section>
 
 
     <footer>
-        <div class="w">
+      <div class="w">
 
-        </div>
+      </div>
 
     </footer>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-31855585-2', 'hackuva.io');
-		  ga('send', 'pageview');
+      ga('create', 'UA-31855585-2', 'hackuva.io');
+      ga('send', 'pageview');
 
-		</script>
+    </script>
 
-    </body>
-</html>
+  </body>
+  </html>
