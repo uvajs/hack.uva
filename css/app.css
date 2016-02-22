@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
-  height: 100%;
-  width:100%; }
+  height: 100%; }
 
 header {
   height: 90px;
@@ -61,6 +60,40 @@ footer {
   border-bottom: #b9b9b9 solid 5px;
   border-top: #9b9b9b solid 1px; }
 
+input[type=submit] {
+  border: 0;
+  box-shadow: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #00aeef;
+  color: white; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ef9236; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ef9236;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ef9236;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ef9236; }
+
+:placeholder-shown {
+  /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: #ef9236; }
+
 .logo {
   background: url(../images/hackuva.png) no-repeat;
   background-size: contain;
@@ -77,6 +110,9 @@ footer {
     .logo {
       background-position: center;
       height: 40%; } }
+
+.submit-button {
+  padding-top: 5px; }
 
 .helper {
   display: inline-block;
@@ -98,16 +134,21 @@ footer {
     .w, .sponsors {
       width: 100%; } }
 
-.schedule{
-    width:30%; 
-    margin-left:35%; 
-    margin-right:35%;
-  }
-.centered{
-  text-align: center;
-}
+.schedule {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%; }
 
+.centered {
+  text-align: center; }
 
+.email {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  width: 400px;
+  color: #ef9236;
+  border-bottom: 1px solid white; }
 
 .anchor {
   position: relative;
@@ -224,7 +265,7 @@ img.rk {
   width: 350px;
   padding: 0 60px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   position: relative;
   z-index: 2;
@@ -252,7 +293,7 @@ img.rk {
   width: 350px;
   padding: 0 60px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   position: relative;
   z-index: 2;
@@ -275,3 +316,5 @@ img.rk {
     text-shadow: 0 0.07em 0 #d17418;
     box-shadow: 0 0.15em 0 #c76a0e;
     top: .2em; }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,16 +1,18 @@
 @import 'colors';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-$button-radius: 5px;
+$button-radius: 10px;
 $header-border: 3px;
+$uva_blue: #00AEEF;
+$uva_orange:#EF9235;
 
 body {
 	height: 100%;
 }
 
 header {
-    height:90px; 
-    border-bottom: $header-border solid $light-gray;
+	height:90px; 
+	border-bottom: $header-border solid $light-gray;
 	// box-shadow: 2px 0 20px rgba(0,0,0,.2);
 	position: fixed;
 	background: white;
@@ -19,18 +21,18 @@ header {
 	z-index: 200;
 
 	nav {
-	    display: inline-block;
-	    float: right;
-	    margin-right: 20px;
-	    position: absolute;
-	    right: 0;
-	    height: 50px;
-	    bottom: 0;
-	    font-family: "Open Sans";
-	    font-size: 1.2em;
-	    font-weight: 100;
+		display: inline-block;
+		float: right;
+		margin-right: 20px;
+		position: absolute;
+		right: 0;
+		height: 50px;
+		bottom: 0;
+		font-family: "Open Sans";
+		font-size: 1.2em;
+		font-weight: 100;
 
-	    @media screen and (max-width: 620px) {
+		@media screen and (max-width: 620px) {
 			text-align: center;
 			position: relative;
 			margin:0;
@@ -38,35 +40,35 @@ header {
 			float: none;
 			top: -6px;
 		}
-	    
-	    a {
-	    	color: #b4b4b4;
-		    text-decoration:none;
-		    height: 100%;
-		    display: block;
-		    float: left;
 
-		    @media screen and (max-width: 620px) {
+		a {
+			color: #b4b4b4;
+			text-decoration:none;
+			height: 100%;
+			display: block;
+			float: left;
+
+			@media screen and (max-width: 620px) {
 				display: inline-block;
 				float: none;
 			}
 
-		    &.selected {
-		    	border-bottom: $header-border solid $orange;
-		    	color: $orange;
-		    }
+			&.selected {
+				border-bottom: $header-border solid $orange;
+				color: $orange;
+			}
 
-	    	span {
-	    		padding: 5px 45px;
-	    		height: 100%;
-	    		display: block;
-	    		box-sizing: border-box;
+			span {
+				padding: 5px 45px;
+				height: 100%;
+				display: block;
+				box-sizing: border-box;
 				@media screen and (max-width: 900px) {
 					padding:15px 10px;
 					font-size: 0.8em;
 				}
-	    	}
-	    }
+			}
+		}
 	}
 }
 
@@ -79,11 +81,42 @@ footer {
 	border-top: $light-gray - 60 solid 1px;
 }
 
+input[type=submit]{
+	border:0;
+	box-shadow:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	border-radius: $button-radius;
+	margin-top:30px;
+	background-color:$blue;
+	color:white;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    $orange;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    $orange;
+	opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    $orange;
+	opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:    $orange;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	color:    $orange;
+}
+
 .logo {
 	background: url(../images/hackuva.png) no-repeat;
 	background-size: contain;
-    vertical-align: middle;
-    height: 77%;
+	vertical-align: middle;
+	height: 77%;
 	box-sizing: border-box;
 	width: 300px;
 	float: left;
@@ -97,14 +130,18 @@ footer {
 	}
 }
 
+.submit-button{
+	padding-top: 5px;
+}
+
 .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
 .background {
-  width: 100%;
+	width: 100%;
 }
 
 
@@ -120,6 +157,25 @@ footer {
 	position: relative;
 	height: 100%;
 }
+
+.schedule{
+	width:30%; 
+	margin-left:35%; 
+	margin-right:35%;
+}
+.centered{
+	text-align: center;
+}
+
+.email{
+	background-color: transparent;
+	border:0;
+	outline:0;
+	width:400px;
+	color:$orange;
+	border-bottom: 1px solid white;
+}
+
 
 .anchor {
 	position: relative;
@@ -213,12 +269,12 @@ section.text {
 		width: 800px;
 		padding: 20px 0;
 		-webkit-column-count: 2;
-        -webkit-column-gap : 30px;
-        -webkit-column-break-inside:avoid;
-        @media screen and (max-width: 810px) {
-            -webkit-column-count: 1;
-            width:85%;
-        }
+		-webkit-column-gap : 30px;
+		-webkit-column-break-inside:avoid;
+		@media screen and (max-width: 810px) {
+			-webkit-column-count: 1;
+			width:85%;
+		}
 	}
 
 	h2:first-child {
@@ -257,7 +313,6 @@ section.text {
 
 .sponsors {
 	@extend .w;
-
 	line-height: 150px;
 	width: 700px;
 	padding: 0 20px;

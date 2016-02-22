@@ -60,6 +60,36 @@ footer {
   border-bottom: #b9b9b9 solid 5px;
   border-top: #9b9b9b solid 1px; }
 
+input[type=submit] {
+  border-radius: 12px;
+  margin-top: 20px;
+  font-family: "Open Sans"
+  padding:16px;
+  background-color: #00AEEF;
+  color: white; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #EF9235; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #EF9235;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #EF9235;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #EF9235; }
+
+:placeholder-shown {
+  /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: #EF9235; }
+
 .logo {
   background: url(../images/hackuva.png) no-repeat;
   background-size: contain;
@@ -76,6 +106,9 @@ footer {
     .logo {
       background-position: center;
       height: 40%; } }
+
+.submit-button {
+  padding-top: 5px; }
 
 .helper {
   display: inline-block;
@@ -96,6 +129,22 @@ footer {
   @media screen and (max-width: 1000px) {
     .w, .sponsors {
       width: 100%; } }
+
+.schedule {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%; }
+
+.centered {
+  text-align: center; }
+
+.email {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  width: 400px;
+  color: white;
+  border-bottom: 1px solid white; }
 
 .anchor {
   position: relative;
@@ -263,3 +312,5 @@ img.rk {
     text-shadow: 0 0.07em 0 #d17418;
     box-shadow: 0 0.15em 0 #c76a0e;
     top: .2em; }
+
+/*# sourceMappingURL=app.css.map */
