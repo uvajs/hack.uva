@@ -81,7 +81,7 @@ footer {
 	border-top: $light-gray - 60 solid 1px;
 }
 
-input[type=submit]{
+button{
 	border:0;
 	box-shadow:0;
 	padding-top:10px;
@@ -90,7 +90,7 @@ input[type=submit]{
 	padding-right:20px;
 	border-radius: $button-radius;
 	margin-top:30px;
-	background-color:$blue;
+	background-color:$orange;
 	color:white;
 }
 
