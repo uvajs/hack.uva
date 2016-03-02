@@ -60,7 +60,7 @@ footer {
   border-bottom: #b9b9b9 solid 5px;
   border-top: #9b9b9b solid 1px; }
 
-input[type=submit] {
+button {
   border: 0;
   box-shadow: 0;
   padding-top: 10px;
