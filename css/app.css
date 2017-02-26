@@ -18,7 +18,7 @@ header {
     right: 0;
     height: 50px;
     bottom: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Open Sans";
     font-size: 1.2em;
     font-weight: 100; }
     @media screen and (max-width: 620px) {
@@ -41,8 +41,7 @@ header {
           float: none; } }
       header nav a.selected {
         border-bottom: 3px solid #ef9236;
-        color: #ef9236; 
-      }
+        color: #ef9236; }
       header nav a span {
         padding: 5px 45px;
         height: 100%;
@@ -96,7 +95,7 @@ button {
   color: #ef9236; }
 
 .logo {
-  background: url(../images/hackuva_logo_words.svg) no-repeat;
+  background: url(../images/hackuva.png) no-repeat;
   background-size: contain;
   vertical-align: middle;
   height: 77%;
@@ -135,6 +134,10 @@ button {
     .w, .sponsors {
       width: 100%; } }
 
+.schedule {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%; }
 
 .centered {
   text-align: center; }
@@ -157,86 +160,39 @@ button {
     top: 0; }
 
 .main .call-to-action {
-/*    background: url(../images/rotunda-huge.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    padding: 150px 0;*/
-    background-color: #eceeef;
-}
-
-.main .call-to-action .intro {
-  text-align: center;
+  background: url(../images/rotunda-huge.jpg);
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  bottom:-100px;
-  /*margin-bottom:-80px;*/
-
-}
-.main .call-to-action .intro img {
-  padding-top:50px;
-  width: 35%;
-  /*prevents ghost image*/
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
-
-}
-.main .call-to-action .intro-text {
-  padding-top:30px;
-  color: #00ADEF;
-  font-family: 'Rubik', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2.5em;
-
-  /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
-}
-  @media screen and (max-width: 635px) {
-    .main .call-to-action .intro-text {
-      font-size: 2.2em; } }
-  .main .call-to-action .intro-text span {
-    font-weight: 900;
-    display: block;
-    font-size: 2em; }
+  padding: 150px 0; }
+  .main .call-to-action .intro-text {
+    color: white;
+    font-family: "proxima-nova";
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
     @media screen and (max-width: 635px) {
-      .main .call-to-action .intro-text span {
-        font-size: 1.5em; } }
-
-.main .call-to-action .buttons {
-  text-align: center; 
-  padding: 10px;
-}
-.main .call-to-action .register {
-  -webkit-border-radius: 12;
-  -moz-border-radius: 12;
-  border-radius: 12px;
-  font-family: 'Rubik', sans-serif;
-  color: #FFFFFF;
-  font-size: 1.25em;
-  background: #EF9235;
-  padding: 15px 30px 15px 30px;
-  text-decoration: none;
-}
-.main .call-to-action .register:hover {
-  background: #00ADEF;
-    -webkit-transition: all .3s ease-in;
-  text-decoration: none;
-}
-.main .call-to-action .register:focus {
-  outline: 0;
-}
+      .main .call-to-action .intro-text {
+        font-size: 2.2em; } }
+    .main .call-to-action .intro-text span {
+      font-weight: 900;
+      display: block;
+      font-size: 2em; }
+      @media screen and (max-width: 635px) {
+        .main .call-to-action .intro-text span {
+          font-size: 1.5em; } }
+  .main .call-to-action .buttons {
+    text-align: center; }
 
 section.text {
-  background-color: #FFFFFF;
-  font-family: 'Rubik', sans-serif;
-  padding-top: 40px; }
-  section.text .w {
+  padding-top: 10px; }
+  section.text .w, section.text .sponsors {
     width: 800px;
     padding: 20px 0;
     -webkit-column-count: 2;
-    -webkit-column-gap: 80px;
+    -webkit-column-gap: 30px;
     -webkit-column-break-inside: avoid; }
     @media screen and (max-width: 810px) {
       section.text .w, section.text .sponsors {
@@ -252,7 +208,7 @@ section.text {
     section.text a:hover {
       border-bottom-style: solid; }
   section.text h2 {
-    margin-bottom: 5px;  font-family: 'Rubik', sans-serif;
+    margin-bottom: 5px;
     color: #afafaf;
     font-weight: 100; }
   section.text h2 + p {
@@ -263,88 +219,12 @@ section.text {
     display: inline-block;
     color: #1e1e1e; }
 
-
-section.scheduleSect {
-  font-family: 'Rubik', sans-serif;
-  background-color: #00ADEF;
-  color: #FFFFFF;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-}
-
-.schedule {
-  width: 40%;
-  margin-left: 30%;
-  margin-right: 30%; 
-  font-size: 1.05em;
-}
-
-.schedule tr {
-  border-style: none none solid none;
-  border-color: #000000;
-  border-width: 1px;
-}
-
-.schedule td {
-  padding: 5px;
-}
-
-table.schedule .time {
-  text-align: right;
-}
-
-.scheduleDate {
-  font-size: 1.5em;
-}
-
-
-section.sponsors {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: 'Rubik', sans-serif;
-  /*width: 40%;*/
-/*
+.sponsors {
   line-height: 150px;
   width: 700px;
   padding: 0 20px;
   text-align: center;
-  box-sizing: border-box; */
-}
-
-section.sponsors .logo-link {
-  /*width: 50%;*/
-  text-align:center;
-  color: #000000 !important;
-  outline: 0;
-  text-decoration: none;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
-}
-
-section.sponsors img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right:80px;
-  padding-left:80px;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
-}
-
-section.sponsors h1 {
-  padding-bottom: 20px;
-}
-
-
-.sponsorHR {
-  width: 50%;
-}
+  box-sizing: border-box; }
 
 .fancy {
   font-family: "teimer-web";
@@ -390,7 +270,7 @@ img.rk {
   position: relative;
   z-index: 2;
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: "proxima-nova";
   text-transform: uppercase;
   font-size: 1.3em;
   font-weight: 700;
@@ -418,7 +298,7 @@ img.rk {
   position: relative;
   z-index: 2;
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: "proxima-nova";
   text-transform: uppercase;
   font-size: 1.3em;
   font-weight: 700;
@@ -436,6 +316,5 @@ img.rk {
     text-shadow: 0 0.07em 0 #d17418;
     box-shadow: 0 0.15em 0 #c76a0e;
     top: .2em; }
-
 
 /*# sourceMappingURL=app.css.map */
