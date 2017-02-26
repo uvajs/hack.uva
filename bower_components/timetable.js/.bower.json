@@ -1,0 +1,34 @@
+{
+  "name": "timetable.js",
+  "version": "0.6.2",
+  "description": "Vanilla javascript plugin for building nice responsive timetables",
+  "keywords": [
+    "timetable",
+    "responsive",
+    "schedule",
+    "agenda",
+    "events"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Grible/timetable.js"
+  },
+  "private": false,
+  "main": [
+    "dist/scripts/timetable.js",
+    "dist/styles/timetablejs.css"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/Grible/timetable.js",
+  "_release": "0.6.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.6.2",
+    "commit": "39df83eca3ce25266941238dcca19ef2585dad04"
+  },
+  "_source": "https://github.com/Grible/timetable.js.git",
+  "_target": "^0.6.2",
+  "_originalSource": "timetable",
+  "_direct": true
+}

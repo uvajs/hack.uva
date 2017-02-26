@@ -60,38 +60,42 @@ footer {
   border-bottom: #b9b9b9 solid 5px;
   border-top: #9b9b9b solid 1px; }
 
-input[type=submit] {
-  border-radius: 12px;
-  margin-top: 20px;
-  font-family: "Open Sans"
-  padding:16px;
-  background-color: #00AEEF;
+button {
+  border: 0;
+  box-shadow: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #ef9236;
   color: white; }
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #EF9235; }
+  color: #ef9236; }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #EF9235;
+  color: #ef9236;
   opacity: 1; }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #EF9235;
+  color: #ef9236;
   opacity: 1; }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #EF9235; }
+  color: #ef9236; }
 
 :placeholder-shown {
   /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
-  color: #EF9235; }
+  color: #ef9236; }
 
 .logo {
-  background: url(../images/hackuva.png) no-repeat;
+  background: url(../images/hackuva_logo_words.svg) no-repeat;
   background-size: contain;
   vertical-align: middle;
   height: 77%;
@@ -143,7 +147,7 @@ input[type=submit] {
   border: 0;
   outline: 0;
   width: 400px;
-  color: white;
+  color: #ef9236;
   border-bottom: 1px solid white; }
 
 .anchor {
@@ -155,32 +159,26 @@ input[type=submit] {
   .anchor[name="home"] {
     top: 0; }
 
-.main .call-to-action {
-  background: url(../images/rotunda-huge.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  padding: 150px 0; }
-  .main .call-to-action .intro-text {
-    color: white;
-    font-family: "proxima-nova";
-    text-transform: uppercase;
-    font-weight: 100;
-    text-align: center;
-    font-size: 3.5em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+.main .call-to-action .intro-text {
+  color: #00ADEF;
+  font-family: "proxima-nova";
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  font-size: 3.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 635px) {
+    .main .call-to-action .intro-text {
+      font-size: 2.2em; } }
+  .main .call-to-action .intro-text span {
+    font-weight: 900;
+    display: block;
+    font-size: 2em; }
     @media screen and (max-width: 635px) {
-      .main .call-to-action .intro-text {
-        font-size: 2.2em; } }
-    .main .call-to-action .intro-text span {
-      font-weight: 900;
-      display: block;
-      font-size: 2em; }
-      @media screen and (max-width: 635px) {
-        .main .call-to-action .intro-text span {
-          font-size: 1.5em; } }
-  .main .call-to-action .buttons {
-    text-align: center; }
+      .main .call-to-action .intro-text span {
+        font-size: 1.5em; } }
+.main .call-to-action .buttons {
+  text-align: center; }
 
 section.text {
   padding-top: 10px; }
@@ -261,7 +259,7 @@ img.rk {
   width: 350px;
   padding: 0 60px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   position: relative;
   z-index: 2;
@@ -289,7 +287,7 @@ img.rk {
   width: 350px;
   padding: 0 60px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   position: relative;
   z-index: 2;
@@ -312,5 +310,9 @@ img.rk {
     text-shadow: 0 0.07em 0 #d17418;
     box-shadow: 0 0.15em 0 #c76a0e;
     top: .2em; }
+
+.logo-link {
+  color: #000000 !important;
+  text-decoration: none; }
 
 /*# sourceMappingURL=app.css.map */

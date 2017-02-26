@@ -113,7 +113,7 @@ button{
 }
 
 .logo {
-	background: url(../images/hackuva.png) no-repeat;
+	background: url(../images/hackuva_logo_words.svg) no-repeat;
 	background-size: contain;
 	vertical-align: middle;
 	height: 77%;
@@ -193,14 +193,16 @@ button{
 .main {
 
 	.call-to-action {
-		background: url(../images/rotunda-huge.jpg);
-		background-position: center;
-		background-size: cover;
-		width: 100%;
-		padding: 150px 0;
+		// background: url(../images/rotunda-huge.jpg);
+		// background-position: center;
+		// background-size: cover;
+		// width: 100%;
+		// padding: 150px 0;
+
+
 
 		.intro-text {
-			color: white;
+			color: #00ADEF;
 			font-family: "proxima-nova";
 			text-transform: uppercase;
 			font-weight: 100;
@@ -386,4 +388,9 @@ img.rk {
 
 .sponsor-action {
 	@include button($orange);
+}
+
+.logo-link { 
+    color:#000000 !important;
+    text-decoration:none;
 }
