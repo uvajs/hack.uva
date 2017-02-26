@@ -212,13 +212,11 @@ button {
   -webkit-border-radius: 12;
   -moz-border-radius: 12;
   border-radius: 12px;
-  font-family: 'Rubik', sans-serif;
-  color: #FFFFFF;
-  font-size: 1.25em;
   background: #EF9235;
   padding: 15px 30px 15px 30px;
   text-decoration: none;
 }
+
 .main .call-to-action .register:hover {
   background: #00ADEF;
     -webkit-transition: all .3s ease-in;
@@ -226,6 +224,14 @@ button {
 }
 .main .call-to-action .register:focus {
   outline: 0;
+}
+
+
+.main .call-to-action .register a{
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.25em;
+  text-decoration: none;
 }
 
 section.text {
