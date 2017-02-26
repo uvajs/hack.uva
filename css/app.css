@@ -160,11 +160,13 @@ button {
     top: 0; }
 
 .main .call-to-action {
-  background: url(../images/rotunda-huge.jpg);
+/*  background: url(../images/rotunda-huge.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
-  padding: 150px 0; }
+  padding: 150px 0; */
+  background-color: #eceeef;
+}
   .main .call-to-action .intro-text {
     color: white;
     font-family: "proxima-nova";
