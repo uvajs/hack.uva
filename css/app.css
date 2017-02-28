@@ -223,6 +223,9 @@ button {
   background: #EF9235;
   padding: 15px 30px 15px 30px;
   text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.25em;
 }
 
 .main .call-to-action .register:hover {
@@ -235,11 +238,7 @@ button {
   outline: 0;
 }
 
-
 .main .call-to-action .register a{
-  font-family: 'Rubik', sans-serif;
-  color: #FFFFFF;
-  font-size: 1.25em;
   text-decoration: none;
 }
 
