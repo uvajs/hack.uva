@@ -35,8 +35,28 @@ $("#email-notif").submit(function(e){
 				selected = key;
 			}
 		}
-
+		// console.log(selected);
 		$navLinks.removeClass("selected").filter('[data-for='+ selected +']').addClass("selected");
+	});
+
+	$(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	   	  var selected = $(this.hash.slice(1)).selector;
+	   	  //console.log(selected);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	      	// console.log(target);
+	      	$navLinks.removeClass("selected").filter('[data-for='+ selected +']').addClass("selected");
+
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
 	});
 
 

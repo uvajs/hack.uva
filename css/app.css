@@ -41,7 +41,14 @@ header {
           float: none; } }
       header nav a.selected {
         border-bottom: 3px solid #ef9236;
+        border-top: none;
+        border-right:none;
+        border-left:none;
+        text-decoration:none;
         color: #ef9236; 
+      }
+      header nav a:hover, header nav a:active, header nav a:focus {
+        outline:none;
       }
       header nav a span {
         padding: 5px 45px;
@@ -317,6 +324,10 @@ section.scheduleSect .bgSched {
 
 .schedule td {
   padding: 5px;
+}
+
+.schedule td b {
+  color: #EF9235;
 }
 
 table.schedule .time {
