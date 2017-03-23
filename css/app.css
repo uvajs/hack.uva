@@ -367,8 +367,8 @@ section.sponsors .logo-link {
 section.sponsors img {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right:60px;
-  padding-left:60px;
+  padding-right:50px;
+  padding-left:50px;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -404,7 +404,7 @@ section.sponsors h1 {
 
 img {
   padding: 10px 20px;
-  width: 250px;
+  width: 200px;
   position: relative;
   vertical-align: middle; }
 
