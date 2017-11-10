@@ -45,7 +45,7 @@ header {
         border-right:none;
         border-left:none;
         text-decoration:none;
-        color: #ef9236; 
+        color: #ef9236;
       }
       header nav a:hover, header nav a:active, header nav a:focus {
         outline:none;
@@ -169,7 +169,14 @@ button {
     background-size: cover;
     width: 100%;
     padding: 150px 0;*/
-    background-color: #344771;
+    /*background-color: #344771;*/
+    width: 100%;
+    /*padding: 150px 0;*/
+    /*background-color: #0E2F44; */
+    background-color: #0e2f44;
+    background-image: linear-gradient( rgba(14,47,68,.8), rgba(14,47,68,.8) ), url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main .call-to-action .intro {
@@ -213,7 +220,7 @@ button {
         font-size: 1.5em; } }
 
 .main .call-to-action .buttons {
-  text-align: center; 
+  text-align: center;
   padding: 10px;
 }
 .main .call-to-action .register {
@@ -242,6 +249,30 @@ button {
   text-decoration: none;
 }
 
+.main .call-to-action .social-media-bar {
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.main .call-to-action .fa {
+  margin-left: 5px;
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+
 section.text {
   background-color: #FFFFFF;
   font-family: 'Rubik', sans-serif;
@@ -251,10 +282,10 @@ section.text {
     padding: 20px 0;
     -webkit-column-count: 2;
     -webkit-column-gap: 80px;
-    -webkit-column-break-inside: avoid; 
+    -webkit-column-break-inside: avoid;
     -moz-column-count: 2;
     -moz-column-gap: 80px;
-    -moz-column-break-inside: avoid; 
+    -moz-column-break-inside: avoid;
   }
     @media screen and (max-width: 810px) {
       section.text .w, section.text .sponsors {
@@ -295,7 +326,7 @@ section.scheduleSect {
 }
 
 /*for background image*/
-section.scheduleSect .bgSched { 
+section.scheduleSect .bgSched {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -311,7 +342,7 @@ section.scheduleSect .bgSched {
 .schedule {
   width: 50%;
   margin-left: 25%;
-  margin-right: 25%; 
+  margin-right: 25%;
   font-size: 1.05em;
 }
 

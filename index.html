@@ -42,6 +42,7 @@
 
   <script src="./js/main.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -55,11 +56,8 @@
       <nav>
         <a data-for="home" href="#home" class="selected"><span>Home</span></a>
         <a data-for="faq" href="#faq"><span>FAQ</span></a>
-        <a data-for="schedule" href="#schedule"><span>Schedule</span></a>
+        <!-- <a data-for="schedule" href="#schedule"><span>Schedule</span></a> -->
         <a data-for="sponsors" href="#sponsors"><span>Sponsors</span></a>
-        
-        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-
       </nav>
     </div>
   </header>
@@ -68,14 +66,20 @@
   <section class="main">
     <section class="call-to-action">
       <div class="intro">
-        <img src="./images/hackuva_logo_animated_cropped.svg">
+        <img src="./images/logo_2018_animated.svg">
       </div>
       <div class="intro-text">
-        March 25th - March 26th, 2017
+        March 24th - March 25th, 2018
       </div>
-      <!-- register button -->
+
       <div class="buttons">
-        <a href="typeform.html"> <button class="register">Register</button> </a>
+        <!-- register button -->
+        <!-- <a href="typeform.html"> <button class="register">Register</button> </a> -->
+        <div class="social-media-bar">
+          <a href="https://www.facebook.com/hackersatuva" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/uvahackers" class="fa fa-twitter"></a>
+          <a href="mailto:hackathon@virginia.edu" class="fa fa-envelope"></a>
+        </div>
       </div>
     </section>
   </section>
@@ -85,7 +89,7 @@
   <section class="text">
     <div class="w">
       <h2>What is Hack.UVA?</h2>
-      <p>A programming event that will be held on <strong>Saturday, March 25, 2017 to Sunday, March 26th, 2017</strong> where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. <strong>Prizes</strong> will be awarded to the top hacks. There is <strong>no entrance fee</strong> and all <strong>meals are free</strong>.</p>
+      <p>A programming event that will be held on <strong>Saturday, March 24, 2018 to Sunday, March 25th, 2018</strong> where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. <strong>Prizes</strong> will be awarded to the top hacks. There is <strong>no entrance fee</strong> and all <strong>meals are free</strong>.</p>
 
       <h2>Who can attend?</h2>
       <p>Hack.UVA welcomes all current students. If you are an organization interested in sponsoring the event, please contact <a href="mailto:hackathon@virginia.edu">hackathon@virginia.edu</a>.</p>
@@ -114,7 +118,7 @@
     </div>
   </section>
 
-  <a class="anchor" name="schedule"></a>
+  <!-- <a class="anchor" name="schedule"></a>
   <section class="scheduleSect">
     <div class="bgSched"> </div>
     <div>
@@ -122,7 +126,7 @@
         <h1>Schedule</h1>
         <p class="scheduleDate"> Saturday, March 25 </p>
       </div>
-      <table class="schedule">          
+      <table class="schedule">
         <tr>
           <td>Registration Begins @ 1st Floor Bavaro Hall</td>
           <td class="time">1:00pm</td>
@@ -148,7 +152,7 @@
       <div class="centered">
         <p class="scheduleDate"> Sunday, March 26 </p>
       </div>
-      <table class="schedule">   
+      <table class="schedule">
         <tr>
           <td>Snacks</td>
           <td class="time">12:00am</td>
@@ -175,13 +179,15 @@
         </tr>
       </table>
     </div>
-  </section>
+  </section> -->
 
   <a class="anchor" name="sponsors"></a>
-  <section class="sponsors">  
+  <section class="sponsors">
     <div class="centered" id="sponsors">
-      <h1>Sponsored by</h1>
-      <br>
+      <h1>Sponsors</h1>
+        <p> Sponsors will be announced soon! Stay tuned! </p>
+        <p>Interested in sponsoring? Let us <a class="sponsorEmail" href="./sponsors/">know</a>.</p>
+      <!-- <br>
       <a class="logo-link" href="https://www.swift.com/"> <img src="./images/swift.png"> </a>
       <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img src="./images/pariveda.png"> </a>
       <a class="logo-link" href="https://www.verisign.com/"> <img src="./images/Verisign.png"> </a>
@@ -193,7 +199,7 @@
       <a class="logo-link" href="https://www.microsoft.com/en-us/"> <img src="./images/Microsoft.png"> </a>
       <a class="logo-link" href="https://www.zteusa.com/">  <img src="./images/ZTE_logo.png"> </a>
       <a class="logo-link" href="https://cos.io/"> <img src="./images/cos_logo.png"> </a>
-      <br>      
+      <br>
       <br>
       <br>
       <a class="logo-link">  <img src="./images/shelat.png"> </a>
@@ -210,12 +216,10 @@
       <br>
       <a class="logo-link" href="http://www.brgtshirts.com/"> <img src="./images/blue_ridge_graphics.png"> </a>
       <a class="logo-link" href="https://insomniacookies.com/"> <img src="./images/insomnia_cookies.png"> </a>
-      <a class="logo-link"> <img src="./images/Red_Bull.png"> </a>
+      <a class="logo-link"> <img src="./images/Red_Bull.png"> </a> -->
       <br>
-
-
     </div>
-      <br>
+      <!-- <br>
       <hr class="sponsorHR">
 
     <div class="centered">
@@ -230,7 +234,7 @@
       More Coming Soon!
       <br> <br>
       <p class="sponsor aux">Interested in sponsoring? Let us <a class="sponsorEmail" href="./sponsors/">know</a>.</p>
-    </div>
+    </div> -->
   </section>
 
 
