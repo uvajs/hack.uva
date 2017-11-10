@@ -131,7 +131,7 @@ button {
   width: 100%; }
 
 .w, .sponsors {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
   height: 100%; }
@@ -141,7 +141,6 @@ button {
   @media screen and (max-width: 1000px) {
     .w, .sponsors {
       width: 100%; } }
-
 
 .centered {
   text-align: center; }
