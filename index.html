@@ -1,257 +1,379 @@
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <script type="text/javascript">
-    (function(d) {
-      var config = {
-        kitId: 'wbu7hjf',
-        scriptTimeout: 3000
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
-  <meta charset="utf-8">
-  <title>hack.uva</title>
-  <meta name="description" content="">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="cleartype" content="on">
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>hack.uva</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
 
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-  <!--  -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-  <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">hack.uva</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#themes">Themes</a></li>
+											<li><a href="#schedule">Schedule</a></li>
+											<li><a href="#faq">FAQ</a></li>
+											<li><a href="#team">Team</a></li>
+											<li><a href="#sponsors">Sponsors</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="#222222">
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<!-- <h2>Spectral</h2> -->
+							<img class="animated-logo" src="images/logo_2018_animated.svg" />
+							<p>March 24th - March 25th, 2018</p>
+							<!-- <ul class="icons major">
+								<li><span class="icon fa-facebook major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-twitter major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-envelope-o major style3"><span class="label">Dolor</span></span></li>
+							</ul> -->
+							<button class="typeform-share button register" href="https://arnim.typeform.com/to/hrELqD" data-mode="popup" target="_blank">Join Us </button>
+							<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+						</div>
+						<br /> <br /> <br />
+						<a href="#one" class="more scrolly"></a>
+					</section>
 
-
-  <script src="./bower_components/Snap.svg/dist/snap.svg.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-  <script src="./js/main.js"></script>
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/app.css">
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-
-</head>
-<body>
-  <header>
-    <div class="w">
-      <a href="#home"><div class="logo"></div></a>
-      <nav>
-        <a data-for="home" href="#home" class="selected"><span>Home</span></a>
-        <a data-for="faq" href="#faq"><span>FAQ</span></a>
-        <a data-for="schedule" href="#schedule"><span>Schedule</span></a>
-        <a data-for="sponsors" href="#sponsors"><span>Sponsors</span></a>
-        
-        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-
-      </nav>
-    </div>
-  </header>
-
-  <a class="anchor" name="home"></a>
-  <section class="main">
-    <section class="call-to-action">
-      <div class="intro">
-        <img src="./images/hackuva_logo_animated_cropped.svg">
-      </div>
-      <div class="intro-text">
-        March 25th - March 26th, 2017
-      </div>
-      <!-- register button -->
-      <div class="buttons">
-        <a href="typeform.html"> <button class="register">Register</button> </a>
-      </div>
-    </section>
-  </section>
-
-
-  <a class="anchor" name="faq"></a>
-  <section class="text">
-    <div class="w">
-      <h2>What is Hack.UVA?</h2>
-      <p>A programming event that will be held on <strong>Saturday, March 25, 2017 to Sunday, March 26th, 2017</strong> where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. <strong>Prizes</strong> will be awarded to the top hacks. There is <strong>no entrance fee</strong> and all <strong>meals are free</strong>.</p>
-
-      <h2>Who can attend?</h2>
-      <p>Hack.UVA welcomes all current students. If you are an organization interested in sponsoring the event, please contact <a href="mailto:hackathon@virginia.edu">hackathon@virginia.edu</a>.</p>
-
-      <h2>When can I register?</h2>
-      <p>Registration is now open! You can register <a href="./typeform.html"> here</a>.</p>
-
-      <h2>How big can my team be?</h2>
-      <p>Between 3 and 7 feet tall. But seriously, you may work in a team with up to four people.</p>
-
-      <h2>Can I come even if I’m inexperienced?</h2>
-      <p>Hack.UVA is a great opportunity for new hackers. There will be tech talks and personal support from mentors at the event.
-      </p>
-
-      <h2>Travel reimbursement?</h2>
-      <p>Unfortunately, there will be no travel reimbursements this year.</p>
-
-      <h2>What should I bring?</h2>
-      <p>Bring your laptop, phone, and chargers!</p>
-
-      <h2>How does judging work?</h2>
-      <p>The judges will evaluate your hack based off <strong>creativity</strong>, <strong>polish</strong>, and <strong>technical vigor</strong>. Succeed in all three categories, and you're bound to win!</p>
-
-      <h2>Is there a code of conduct?</h2>
-      <p>Yes, we abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"> Major League Hacking Code of Conduct </a>. </p>
-    </div>
-  </section>
-
-  <a class="anchor" name="schedule"></a>
-  <section class="scheduleSect">
-    <div class="bgSched"> </div>
-    <div>
-      <div class="centered">
-        <h1>Schedule</h1>
-        <p class="scheduleDate"> Saturday, March 25 </p>
-      </div>
-      <table class="schedule">          
-        <tr>
-          <td>Registration Begins @ 1st Floor Bavaro Hall</td>
-          <td class="time">1:00pm</td>
-        </tr>
-        <tr>
-          <td>Introduction to Hack.UVA</td>
-          <td class="time">2:00pm</td>
-        </tr>
-        <tr>
-          <td><b>HACKING BEGINS</b></td>
-          <td class="time">2:30pm</td>
-        </tr>
-        <tr>
-          <td>Dinner</td>
-          <td class="time">6:30pm</td>
-        </tr>
-        <tr>
-          <td>Doors Close</td>
-          <td class="time">10:00pm </td>
-        </tr>
-      </table>
-      <br>
-      <div class="centered">
-        <p class="scheduleDate"> Sunday, March 26 </p>
-      </div>
-      <table class="schedule">   
-        <tr>
-          <td>Snacks</td>
-          <td class="time">12:00am</td>
-        </tr>
-        <tr>
-          <td>Snacks</td>
-          <td class="time">3:00am</td>
-        </tr>
-        <tr>
-          <td>Breakfast</td>
-          <td class="time">8:00am</td>
-        </tr>
-        <tr>
-          <td><b>HACKING ENDS</b></td>
-          <td class="time">2:30pm</td>
-        </tr>
-        <tr>
-          <td>Demos</td>
-          <td class="time">3:00pm</td>
-        </tr>
-        <tr>
-          <td>Awards</td>
-          <td class="time">5:00pm</td>
-        </tr>
-      </table>
-    </div>
-  </section>
-
-  <a class="anchor" name="sponsors"></a>
-  <section class="sponsors">  
-    <div class="centered" id="sponsors">
-      <h1>Sponsored by</h1>
-      <br>
-      <a class="logo-link" href="https://www.swift.com/"> <img src="./images/swift.png"> </a>
-      <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img src="./images/pariveda.png"> </a>
-      <a class="logo-link" href="https://www.verisign.com/"> <img src="./images/Verisign.png"> </a>
-      <br>
-      <a class="logo-link" href="https://www.facebook.com/about"> <img src="./images/facebook.png"> </a>
-      <a class="logo-link" href="http://www.appian.com/"> <img src="./images/appian.png"> </a>
-      <a class="logo-link" href="http://www.apcela.com/"> <img src="./images/apcela.png"> </a>
-      <br>
-      <a class="logo-link" href="https://www.microsoft.com/en-us/"> <img src="./images/Microsoft.png"> </a>
-      <a class="logo-link" href="https://www.zteusa.com/">  <img src="./images/ZTE_logo.png"> </a>
-      <a class="logo-link" href="https://cos.io/"> <img src="./images/cos_logo.png"> </a>
-      <br>      
-      <br>
-      <br>
-      <a class="logo-link">  <img src="./images/shelat.png"> </a>
-      <a class="logo-link" href="http://www.uvaesc.com/"> <img src="./images/esc.png"> </a>
-      <br>
-      <a class="logo-link" href="https://willowtreeapps.com/"> <img src="./images/willowtree.png"> </a>
-      <a class="logo-link" href="https://www.vividcortex.com/"> <img src="./images/Vivid_Cortex.png"> </a>
-      <a class="logo-link" href="https://www.coshx.com/"> <img src="./images/coshx.png"> </a>
-      <br>
-      <br>
-      <a class="logo-link" href="https://www.google.com/intl/en/about/"> <img src="./images/Google.svg"> </a>
-      <a class="logo-link" href="https://www.twilio.com"> <img src="./images/Twilio.svg"> </a>
-      <a class="logo-link" href="http://its.virginia.edu"> <img src="./images/its.png"> </a>
-      <br>
-      <a class="logo-link" href="http://www.brgtshirts.com/"> <img src="./images/blue_ridge_graphics.png"> </a>
-      <a class="logo-link" href="https://insomniacookies.com/"> <img src="./images/insomnia_cookies.png"> </a>
-      <a class="logo-link"> <img src="./images/Red_Bull.png"> </a>
-      <br>
+					<!-- One -->
+					<section id="themes" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Themes</h2>
+								<p>This year, Hack.UVA will be focusing on <b>diversity</b> with three overarching categories.</p>
+							</header>
+							<div class="themes">
+								<div class="theme">
+									<h3>Safety</h3>
+									<p class="theme-info">Provide physical and emotional security.</p>
+									<p class="icon fa-lock theme-icon"> </p>
+								</div>
+								<div class="theme">
+									<h3>Inequality</h3>
+									<p class="theme-info">Strive to eliminate social and economic inequality.</p>
+									<p class="icon fa-group theme-icon"> </p>
+								</div>
+								<div class="theme">
+									<h3>Empowerment</h3>
+									<p class="theme-info">Giving people the tools to succeed.</p>
+									<p class="icon fa-hand-rock-o theme-icon"> </p>
+								</div>
+							</div>
+						</div>
+					</section>
 
 
-    </div>
-      <br>
-      <hr class="sponsorHR">
+					<!-- Two -->
+						<section id="schedule" class="wrapper wrapper style4 special">
+							<div class="inner">
+								<header class="major">
+									<h2>Tentative Schedule</h2>
+								</header>
+								<p> Saturday, March 24 </p>
 
-    <div class="centered">
-      <h1>In Partnership with</h1>
-      <a class="logo-link" href="https://mlh.io/"> <img src="./images/mlh-logo-color.svg"> </a>
-      <a class="logo-link" href="https://www.hackerearth.com/"> <img src="./images/hackerearth.png" </a>
-      <br>
-    </div>
+								<table class="schedule">
+							  	<tbody>
+										<tr>
+							       	<td>Breakfast and Coffee @ Ern Commons</td>
+							       	<td class="time">9:30am</td>
+							      </tr>
+							      <tr>
+							       	<td>Registration Begins @ Ern Commons</td>
+							       	<td class="time">9:30am</td>
+					        	</tr>
+							      <tr>
+							       	<td>Introduction to Hack.UVA</td>
+					         	 	<td class="time">11:00am</td>
+							      </tr>
+							      <tr>
+							        <td><b>HACKING BEGINS</b></td>
+							        <td class="time">11:30am</td>
+							      </tr>
+					        	<tr>
+							        <td>Lunch</td>
+							        <td class="time">1:00pm</td>
+							      </tr>
+					        	<tr>
+							        <td>Dinner</td>
+							        <td class="time">6:30pm</td>
+							      </tr>
+							  	</tbody>
+								</table>
+								<p> Sunday, March 25 </p>
+								<table class="schedule">
+					        <tbody>
+										<tr>
+						          <td>Midnight Snacks</td>
+						          <td class="time">12:00am</td>
+					        	</tr>
+						        <tr>
+						          <td>Breakfast</td>
+						          <td class="time">8:00am</td>
+						        </tr>
+						        <tr>
+						          <td><b>HACKING ENDS</b></td>
+						          <td class="time">11:30am</td>
+						        </tr>
+						        <tr>
+						          <td>Lunch</td>
+						          <td class="time">11:30am</td>
+						        </tr>
+						        <tr>
+						          <td>Demos</td>
+						          <td class="time">1:00pm</td>
+						        </tr>
+						        <tr>
+						          <td>Awards</td>
+						          <td class="time">3:00pm</td>
+						        </tr>
+					      	</tbody>
+								</table>
+							</div>
+						</section>
 
-    <div class="centered">
-      <br>
-      More Coming Soon!
-      <br> <br>
-      <p class="sponsor aux">Interested in sponsoring? Let us <a class="sponsorEmail" href="./sponsors/">know</a>.</p>
-    </div>
-  </section>
+				<!-- Three -->
+					<section id="faq" class="wrapper style1 special dark-bg">
+						<div class="inner">
+							<header class="major">
+								<h2>FAQ</h2>
+								<p>Have any questions? Email us at  <a href="mailto:hackathon@virginia.edu">hackathon@virginia.edu</a>!</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o style4">
+									<h3>What is Hack.UVA?</h3>
+									<p>A programming event that will be held on <b> Saturday, March 24, 2018 to Sunday, March 25th, 2018 </b> where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. <b> Prizes </b> will be awarded to the top hacks. There is <b> no entrance fee and all meals are free </b>.</p>
+								</li>
+								<li class="icon fa-laptop style4">
+									<h3>Who can attend?</h3>
+									<p>Hack.UVA welcomes all current students. If you are an organization interested in sponsoring the event, please contact <a href="mailto:hackathon@virginia.edu">hackathon@virginia.edu</a>.</p>
+								</li>
+								<li class="icon fa-code style4">
+									<h3>When can I register?</h3>
+									<p>Registration will be open early in the spring semester!</p>
+								</li>
+								<li class="icon fa-headphones style4">
+									<h3>How big can my team be?</h3>
+									<p>Between 3 and 7 feet tall. But seriously, you may work in a team with up to <strong>four</strong> people.</p>
+								</li>
+								<li class="icon fa-heart-o style4">
+									<h3>Can I come even if I'm inexperienced?</h3>
+									<p>Hack.UVA is a great opportunity for new hackers. There will be tech talks and personal support from mentors at the event.</p>
+								</li>
+								<li class="icon fa-flag-o style4">
+									<h3>Will there be travel reimbursement?</h3>
+									<p>We will be providing busses to most large Universites around UVA this year. We will also do travel reimbursements on a case by case basis.</p>
+								</li>
+								<li class="icon fa-flag-o style4">
+									<h3>What should I bring?</h3>
+									<p>Bring your laptop, phone, and chargers!</p>
+								</li>
+								<li class="icon fa-flag-o">
+									<h3>How does judging work?</h3>
+									<p>The judges will evaluate your hack based off <strong>creativity</strong>, <strong>polish</strong>, and <strong>technical vigor</strong>. Projects will also be judged on how well they embody the theme they are competing in.  Succeed in all three categories, and you're bound to win!</p>
+								</li>
+								<li class="icon fa-flag-o">
+									<h3>Is there code of conduct?</h3>
+									<p>Yes, we abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"> Major League Hacking Code of Conduct </a>. </p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Four -->
+						<section id="team" class="wrapper style3 special">
+							<div class="inner">
+								<header>
+									<h2>Meet the Team</h2>
+								</header>
 
 
-    <footer>
-      <div class="w">
+								<div class="people">
+		              <div class="person">
+		                <div class="person-photo">
+											<img src="images/team/arnim_jain.jpg" />
+											<div class="person-info">
+												<h3 class="person-info-name">Arnim Jain</h3>
+												<p class="person-info-title">Co-President</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://www.linkedin.com/in/arnimj/"> </a>
+												</div>
+											</div>
+										</div>
+		              </div>
+		              <div class="person">
+										<div class="person-photo">
+			                <img src="images/team/franklin_huang.jpg" />
+			                <div class="person-info">
+			                  <h3 class="person-info-name">Frank Huang</h3>
+			                  <p class="person-info-title">Co-President</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://linkedin.com/in/frank-huang-740a5988"> </a>
+												</div>
+			                </div>
+										</div>
+		              </div>
+		              <div class="person">
+										<div class="person-photo">
+			                <img src="images/team/diana_chang.jpg">
+			                <div class="person-info">
+			                  <h3 class="person-info-name">Diana Chang</h3>
+			                  <p class="person-info-title">Vice President</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://linkedin.com/in/dianachng"> </a>
+													<a class="icon fa-github profile" href="https://github.com/2changs"> </a>
+												</div>
+			                </div>
+										</div>
+		              </div>
+		              <div class="person">
+										<div class="person-photo">
+			                <img src="images/team/disha_jain.jpg">
+			                <div class="person-info">
+			                  <h3 class="person-info-name">Disha Jain</h3>
+			                  <p class="person-info-title">Secretary, Outreach Chair</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://linkedin.com/in/disha-jain-2020"> </a>
+													<a class="icon fa-github profile" href="https://github.com/disha-jain"> </a>
+												</div>
+			                </div>
+										</div>
+		              </div>
+							</div>
+							<div class="people">
+		              <div class="person">
+										<div class="person-photo">
+			                <img src="images/team/david_zhao.jpg">
+			                <div class="person-info">
+			                  <h3 class="person-info-name">David Zhao</h3>
+			                  <p class="person-info-title">Treasurer</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://linkedin.com/in/davidbzhao"> </a>
+													<a class="icon fa-github profile" href="https://github.com/davidbzhao"> </a>
+												</div>
+			                </div>
+										</div>
+		              </div>
+		              <div class="person">
+										<div class="person-photo">
+			                <img src="images/team/monique_mezher.jpg">
+			                <div class="person-info">
+			                  <h3 class="person-info-name">Monique Mezher</h3>
+			                  <p class="person-info-title">Board</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://linkedin.com/in/moniquemezher"> </a>
+													<a class="icon fa-github profile" href="https://github.com/mmezher"> </a>
+												</div>
+			                </div>
+										</div>
+		              </div>
+		              <div class="person">
+										<div class="person-photo">
+			                <img src="images/team/rohan_raval.jpg">
+			                <div class="person-info">
+			                  <h3 class="person-info-name">Rohan Raval</h3>
+			                  <p class="person-info-title">Board</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://linkedin.com/in/rohanraval"> </a>
+													<a class="icon fa-github profile" href="https://github.com/rohanraval"> </a>
+												</div>
+			                </div>
+										</div>
+		              </div>
+		              <div class="person">
+										<div class="person-photo">
+			                <img src="images/team/andrew_ton.jpg">
+			                <div class="person-info">
+			                  <h3 class="person-info-name">Andrew Ton</h3>
+			                  <p class="person-info-title">Board</p>
+												<div class="person-info-links">
+													<a class="icon fa-linkedin profile" href="https://LinkedIn.com/in/andrewjton"> </a>
+												</div>
+			                </div>
+										</div>
+		              </div>
+		            </div>
+							</div>
 
-      </div>
+						</section>
 
-    </footer>
+						<!-- Five -->
+							<section id="sponsors" class="wrapper style5 special">
+								<div class="inner">
+									<header class="major">
+										<h2>Sponsors</h2>
+										<p>Interested in sponsoring? Let us <a class="sponsorEmail" href="./sponsors/">know</a>.</p>
+									</header>
+									<div id="sponsors">
+					          <a class="logo-link" href="https://www.swift.com/"> <img class="sponsor-logo" src="images/logos/fannie_mae.png"> </a>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/capital_one.png"> </a>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/northrop_grumman.png"> </a>
+					          <br>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/booz_allen.png"> </a>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/leidos.png"> </a>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/palantir.png"> </a>
+					          <br>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/innovative_defense.png"> </a>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/micro_strategy.png"> </a>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/cvent.png"> </a>
+					          <br>
+					          <br>
+					          <br>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/ibm.png"> </a>
+					          <a class="logo-link" href="http://parivedasolutions.com/Pages/default.aspx"> <img class="sponsor-logo" src="images/logos/sap.png"> </a>
+										<br>
+										<p> Stay tuned for more sponsors! </p>
+					        </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+								</div>
+							</section>
 
-      ga('create', 'UA-31855585-2', 'hackuva.io');
-      ga('send', 'pageview');
 
-    </script>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/hackersatuva/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://twitter.com/uvahackers" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="mailto:hackathon@virginia.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>hack.UVA</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
-  </body>
-  </html>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

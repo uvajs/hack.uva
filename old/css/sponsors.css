@@ -1,0 +1,214 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Fenix);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  max-width: 100%;
+  width: 80%;
+  margin-left: auto; margin-right: auto;
+  margin-top: 50px;
+  margin-bottom:100px;
+  font-family: 'Lato', sans-serif;
+  font-size:20px;
+  background-color:white;
+  color: black;
+}
+
+h1, h2 {
+    color: #09235c;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    background-color: #ededed;
+    padding-left: 10px;    
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border:3px solid;
+    border-radius:5px;
+    border-color: #ef9236;
+}
+
+#crown-img {
+    width: 100px;
+    fill: #f00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.benefit {
+    color: #09235c;
+    cursor: help;
+    font-size: 20px;
+}
+.benefit:hover {
+    color: #ef9236;
+    text-decoration: none;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    color: #09235c;
+}
+
+#funding-row {
+    background-color:#dfd; 
+}
+
+tr:nth-child(n+2):nth-child(-n+4) td:nth-child(n+1):nth-child(-n+5), tr:nth-child(2) td:nth-child(6) {
+    border-right: 3px solid rgba(36, 107, 181, 1);;
+}
+
+tr:nth-child(n+5):nth-child(-n+11) td:nth-child(n+1):nth-child(-n+5), tr:nth-child(5) td:nth-child(6) {
+    border-right: 3px solid rgba(245, 127, 32, 1);
+}
+
+tr:nth-child(n+12):nth-child(-n+16) td:nth-child(n+1):nth-child(-n+5), tr:nth-child(12) td:nth-child(6) {
+    border-right: 3px solid rgba(28, 71, 137, 1);
+}
+
+
+tr:nth-child(n+2):nth-child(-n+4) {
+    background-color: rgba(36, 107, 181, 0.05);
+    border-bottom: 3px solid rgba(36, 107, 181, 1);
+}
+
+tr:nth-child(n+5):nth-child(-n+11) {
+    background-color: rgba(245, 127, 32, 0.05);
+    border-bottom: 3px solid rgba(245, 127, 32, 1);
+}
+
+tr:nth-child(n+12):nth-child(-n+16) {
+    background-color: rgba(28, 71, 137, 0.05);
+    border-bottom: 3px solid rgba(28, 71, 137, 1);
+}
+
+tr:nth-child(2), tr:nth-child(5), tr:nth-child(12) {
+    border-top: 10px solid white !important;
+}
+
+tr:nth-child(4), tr:nth-child(4), tr:nth-child(16) {
+    border-bottom: 10px solid white !important;
+}
+
+tr:nth-child(2) .row-header {
+    background-color: rgba(36, 107, 181, 1);
+}
+
+tr:nth-child(5) .row-header {
+    background-color: rgba(245, 127, 32, 1);
+}
+
+tr:nth-child(12) .row-header {
+    background-color: rgba(28, 71, 137, 1);
+}
+
+
+.row-header {
+    color: white !important;
+    border: 10px solid white;
+    border-right: 0;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.special-font {
+    font-style:italic;
+}
+
+.sponsorship-tiers {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+    color: #00aeef;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tier {
+    font-family: 'Arvo', serif;
+    font-size:20px;
+    color: rgba(245, 127, 32, 1);
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.tier-desc {
+    font-family: 'Arvo', serif;
+    font-size:14px;
+}
+
+.ui-tooltip {
+    background: white;
+    border: 3px solid #09235c;
+}
+
+.arrow:after {
+    background: white;
+    border: 2px solid #09235c;
+}
+
+.ui-tooltip {
+    padding: 20px 20px;
+    border-radius: 10px;
+    font: 14px "Lato", Sans-Serif;
+    color: #09235c;
+}
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+.arrow.left {
+    left: 20%;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+}
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+

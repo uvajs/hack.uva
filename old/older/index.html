@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	$(function() {
+
+		$bg = $('.background');
+		$sliver = $('.sliver');
+
+		var desired = 300;
+
+		var ratio = $bg.width() / $bg.height();
+
+		var adjust = function() {
+			var height = "innerHeight" in window 
+               ? window.innerHeight
+               : document.documentElement.offsetHeight;
+                width = $(window).width();
+                center = (width * .4)/2;
+
+            if (height < 480) height = 480;
+
+            if (width > 720) { 
+				$bg.css('height', height);
+				$sliver.css('height', height);
+				$bg.css('left', (center-((ratio*height)/2)) + "px");
+			}
+			else {
+				$bg.css('height', height);
+				$bg.css('left', ((width/2)-((ratio*height)/2)) + "px");
+			}
+		};
+
+		adjust();
+
+		$(window).resize(adjust);
+
+	});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<img class="background" src="images/UVA-Rotunda.jpg"/> 
+	</div>
+
+	<aside>
+		<img class="logo" src="images/hack-uva-logo.png" />
+		<span class="tagline">April 11&mdash;13, 2013</span>
+		<div class="actions">
+			<button class="signup">Sign Up</button>
+			<a class="aux">or become a sponsor</a>
+		</div>
+	</aside>
+
+	<div class="main">
+		<p>content goes here</p>
+	</div>
+
+	<div class="sliver"></div>
+</body>
+</html>

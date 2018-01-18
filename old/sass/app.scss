@@ -1,0 +1,389 @@
+@import 'colors';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$button-radius: 10px;
+$header-border: 3px;
+$uva_blue: #00AEEF;
+$uva_orange:#EF9235;
+
+body {
+	height: 100%;
+}
+
+header {
+	height:90px; 
+	border-bottom: $header-border solid $light-gray;
+	// box-shadow: 2px 0 20px rgba(0,0,0,.2);
+	position: fixed;
+	background: white;
+	width: 100%;
+	opacity: 1;
+	z-index: 200;
+
+	nav {
+		display: inline-block;
+		float: right;
+		margin-right: 20px;
+		position: absolute;
+		right: 0;
+		height: 50px;
+		bottom: 0;
+		font-family: "Open Sans";
+		font-size: 1.2em;
+		font-weight: 100;
+
+		@media screen and (max-width: 620px) {
+			text-align: center;
+			position: relative;
+			margin:0;
+			width: 100%;
+			float: none;
+			top: -6px;
+		}
+
+		a {
+			color: #b4b4b4;
+			text-decoration:none;
+			height: 100%;
+			display: block;
+			float: left;
+
+			@media screen and (max-width: 620px) {
+				display: inline-block;
+				float: none;
+			}
+
+			&.selected {
+				border-bottom: $header-border solid $orange;
+				color: $orange;
+			}
+
+			span {
+				padding: 5px 45px;
+				height: 100%;
+				display: block;
+				box-sizing: border-box;
+				@media screen and (max-width: 900px) {
+					padding:15px 10px;
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	display: none;
+	height: 300px;
+	background: $light-gray;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1);
+	border-bottom: $light-gray - 30 solid 5px;
+	border-top: $light-gray - 60 solid 1px;
+}
+
+button{
+	border:0;
+	box-shadow:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	border-radius: $button-radius;
+	margin-top:30px;
+	background-color:$orange;
+	color:white;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    $orange;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    $orange;
+	opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    $orange;
+	opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:    $orange;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	color:    $orange;
+}
+
+.logo {
+	background: url(../images/hackuva.png) no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	height: 77%;
+	box-sizing: border-box;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
+	@media screen and (max-width: 900px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 620px) {
+		background-position: center;
+		height:40%;
+	}
+}
+
+.submit-button{
+	padding-top: 5px;
+}
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.background {
+	width: 100%;
+}
+
+
+.w {
+	width: 85%;
+	@media screen and (max-width: 1130px) {
+		width:90%;
+	}
+	@media screen and (max-width: 1000px) {
+		width:100%;
+	}
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+
+.schedule{
+	width:30%; 
+	margin-left:35%; 
+	margin-right:35%;
+}
+.centered{
+	text-align: center;
+}
+
+.email{
+	background-color: transparent;
+	border:0;
+	outline:0;
+	width:400px;
+	color:$orange;
+	border-bottom: 1px solid white;
+}
+
+
+.anchor {
+	position: relative;
+	top: -90px;
+	margin: 0;
+	padding: 0;
+	float: left;
+
+	&[name="home"] {
+		top: 0;
+	}
+}
+
+
+.main {
+
+	.call-to-action {
+		// background: url(../images/rotunda-huge.jpg);
+		// background-position: center;
+		// background-size: cover;
+		// width: 100%;
+		// padding: 150px 0;
+		background-color: #eceeef;
+		.intro-text {
+			color: white;
+			font-family: "proxima-nova";
+			text-transform: uppercase;
+			font-weight: 100;
+			text-align: center;
+			font-size: 3.5em;
+			text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+
+			@media screen and (max-width: 635px) {
+				font-size:2.2em;
+			}
+			span {
+				font-weight: 900;
+				display: block;
+				font-size: 2em;
+				@media screen and (max-width: 635px) {
+					font-size:1.5em;
+				}
+			}
+		}
+
+		.buttons {
+			text-align: center;	
+		}
+	}
+}
+
+
+@mixin button($color) {
+	width: 350px;
+	padding: 0 60px;
+	height: 60px;
+	border-radius: $button-radius;
+	border: none;
+	position: relative;
+	z-index: 2;
+	color: white;
+	font-family: "proxima-nova";
+	text-transform: uppercase;
+	font-size: 1.3em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0 10px;
+	background: $color;
+	box-shadow: 0 .3em 0 $color - 40;
+	text-shadow: 0 .1em 0 $color - 30;
+	outline: none;
+
+	&:hover {
+		box-shadow: 0 .35em 0 $color - 40;
+		top: -.05em;
+		text-shadow: 0 .17em 0 $color - 30;
+	}
+
+	&:active {
+		text-shadow: 0 .07em 0 $color - 30;
+		box-shadow: 0 .15em 0 $color - 40;
+		top: .2em;
+	}
+}
+
+section.text {
+	//box-shadow: -3px 0 20px rgba(0,0,0,.2);
+	padding-top: 10px;
+
+	.w {
+		width: 800px;
+		padding: 20px 0;
+		-webkit-column-count: 2;
+		-webkit-column-gap : 30px;
+		-webkit-column-break-inside:avoid;
+		@media screen and (max-width: 810px) {
+			-webkit-column-count: 1;
+			width:85%;
+		}
+	}
+
+	h2:first-child {
+		margin-top: 0;
+	}
+
+	a {
+		color: $blue;
+		padding: 1px 0;
+		border-bottom: 1px dotted;
+		text-decoration: none;
+
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+	
+	h2 {
+		margin-bottom: 5px; 
+		color: $light-gray - 40;
+		font-weight: 100;
+
+	}
+
+	h2 + p {
+		margin-top: 10px;
+	}
+
+	p {
+		line-height: 1.5em;
+		break-after: always;
+		display: inline-block;
+		color: black + 30;
+	}
+}
+
+.sponsors {
+	@extend .w;
+	line-height: 150px;
+	width: 700px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.fancy {
+	font-family: "teimer-web";
+	font-style: italic;
+}
+
+.sponsor.aux {
+	text-align: center;
+	color: $light-gray;
+	font-size: 22px;
+	font-weight: 100;
+	display: block;
+	margin: 20px auto;
+	width: 100%;
+	position: relative;
+	@media screen and (max-width: 635px) {
+		font-size:1em;
+	}
+
+	// &:before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	left: 85px;
+	// 	top: 13px;
+	// 	width: 175px;
+	// 	height: 1px;
+	// 	background: $light-gray;
+	// }
+	// &:after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	right: 85px;
+	// 	top: 13px;
+	// 	width: 175px;
+	// 	height: 1px;
+	// 	background: $light-gray;
+	// }
+}
+
+
+img {
+	padding: 10px 20px;
+	width: 250px;
+	position: relative;
+	vertical-align: middle;
+}
+
+img.acm {
+	width: 120px;
+	padding-top: 20px;
+}
+img.estud {
+	width: 400px;
+	max-width: 80%;
+	padding-top: 10px;
+}
+
+img.rk {
+	width: 220px;
+}
+
+.student-action {
+	@include button($blue);
+}
+
+.sponsor-action {
+	@include button($orange);
+}
