@@ -3976,4 +3976,5 @@ body.is-mobile.landing .theme-icon {
 .sponsor-logo {
 	width:280px;
 	margin:50px;
+	display: unset;
 }
