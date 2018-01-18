@@ -3780,6 +3780,8 @@
 	}
 
 
+
+
 .themes {
 	text-align: center;
 }
@@ -3805,8 +3807,17 @@
 }
 
 .theme-icon {
-	padding-top: 10px;
 	font-size:80px;
+}
+
+body.is-mobile.landing .theme {
+	width:250px;
+	height:250px;
+	padding-top: 30px;
+}
+body.is-mobile.landing .theme-icon {
+	padding-top: 10px;
+	font-size:50px;
 }
 
 .people {
