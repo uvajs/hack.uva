@@ -3918,6 +3918,32 @@ body.is-mobile.landing .theme-icon {
 	margin-top: 50px;
 }
 
+.team-application {
+	display:inline-block;
+	text-decoration:none;
+	background-color:#344152;
+	color:white;
+	cursor:pointer;
+	font-size:15px;
+	line-height:45px;
+	text-align:center;
+	margin:0;
+	height:45px;
+	padding:0px 33px;
+	/* border-radius:25px; */
+	max-width:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	border-color:#DA833C !important;
+	border-width: 0 !important;
+	margin-top: 20px;
+}
+
+
+
 .dark-bg {
 	background-color:#2E5090 !important;
 }
