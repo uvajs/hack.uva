@@ -145,7 +145,6 @@ button {
     .w, .sponsors {
       width: 100%; } }
 
-
 .centered {
   text-align: center; }
 
@@ -168,14 +167,19 @@ button {
   }
 
 .main .call-to-action {
-  /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHUlEQVQoU2Pk03f5z0AEYBxViC+UqBs8Hy/sZgAAFU4RhxOVEaQAAAAASUVORK5CYII==) repeat;*/
-  width: 100%;
-  padding: 150px 0;
-  /*background-color: #0E2F44; */
-  background-color: #0e2f44;
-  background-image: linear-gradient( rgba(14,47,68,.8), rgba(14,47,68,.8) ), url("../images/s18/background4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+/*    background: url(../images/rotunda-huge.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 150px 0;*/
+    /*background-color: #344771;*/
+    width: 100%;
+    /*padding: 150px 0;*/
+    /*background-color: #0E2F44; */
+    background-color: #0e2f44;
+    background-image: linear-gradient( rgba(14,47,68,.8), rgba(14,47,68,.8) ), url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main .call-to-action .intro {
@@ -248,6 +252,10 @@ button {
 }
 
 .main .call-to-action .social-media-bar {
+<<<<<<< HEAD:old/css/app.css
+=======
+  padding: 10px;
+>>>>>>> 83d913873a4472c8d121b0ca62cef0530006d886:css/app.css
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -270,9 +278,12 @@ button {
 }
 
 
+<<<<<<< HEAD:old/css/app.css
 
 
 
+=======
+>>>>>>> 83d913873a4472c8d121b0ca62cef0530006d886:css/app.css
 section.text {
   background-color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;

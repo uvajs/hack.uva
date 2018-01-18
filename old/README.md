@@ -3,7 +3,7 @@
 
 ## FAQ
 ### What is hack.uva?
-A 36-hour programming event where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. Prizes will be awarded to the top hacks. There is no entrance fee, all meals are free, and we will help you out with transportation. Get over here!
+A 24-hour programming event where you, along with other developers, designers, and entrepreneurs work together to create a web or mobile application/platform from scratch. Prizes will be awarded to the top hacks. There is no entrance fee, all meals are free, and we will help you out with transportation. Get over here!
 
 ### Who can attend?
 hack.uva welcomes all current students. If you are an organization interested in sponsoring the event, please contact hackathon@virginia.edu.
