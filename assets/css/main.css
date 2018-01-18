@@ -3755,12 +3755,20 @@
 		background-color: rgba(29, 36, 42, 0.9);
 	}
 
+	body.landing #banner .animated-logo {
+		z-index:10000;
+		/* position: fixed; */
+	}
+
+
 	body.is-mobile.landing #page-wrapper {
 		background: none;
 	}
 
 	body.is-mobile.landing #banner .animated-logo {
 		width: 300px;
+		z-index:10000;
+		/* position: fixed; */
 	}
 
 
@@ -3977,4 +3985,8 @@ body.is-mobile.landing .theme-icon {
 	width:280px;
 	margin:50px;
 	display: unset !important;
+}
+
+#mlh-trust-badge {
+		border:none;
 }
