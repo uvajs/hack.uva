@@ -3983,7 +3983,10 @@ body.is-mobile.landing .theme-icon {
 
 .sponsor-logo {
 	width:280px;
-	margin:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left: 25px;
+	margin-right: 25px;
 	display: unset !important;
 }
 
