@@ -1468,7 +1468,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3923,7 +3923,10 @@ body.is-mobile.landing .theme-icon {
 	-moz-osx-font-smoothing:grayscale;
 	border-color:#DA833C !important;
 	border-width: 0 !important;
-	margin-top: 50px;
+	margin-top: -50px;
+	/* margin-top: px; */
+	/* position: absolute; */
+	/* left: 44%; */
 }
 
 .team-application {
