@@ -3900,6 +3900,7 @@ body.is-mobile.landing .theme-icon {
 
 .schedule {
 	text-align: center;
+	table-layout: fixed;
 }
 
 .register {
