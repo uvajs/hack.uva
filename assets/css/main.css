@@ -2970,6 +2970,10 @@
 			background-position: center;
 		}
 
+		.wrapper.style6 {
+			background-color: #DC7633;
+			color: #4E4852;
+		}
 
 		.wrapper.style5 {
 			background-color: #ffffff;
@@ -3144,6 +3148,7 @@
 		.wrapper.style5 header {
 			text-align: center;
 		}
+
 
 /* Page Wrapper + Menu */
 
@@ -3818,6 +3823,10 @@
 	font-size:80px;
 }
 
+.prize-icon {
+	font-size:80px;
+}
+
 body.is-mobile.landing .theme {
 	width:250px;
 	height:250px;
@@ -3996,4 +4005,56 @@ body.is-mobile.landing .theme-icon {
 
 #mlh-trust-badge {
 		border:none;
+}
+
+.prizes {
+	text-align: center;
+}
+
+.prize {
+	margin-bottom: 20px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #154360;
+	padding: 10px;
+	height: 320px;
+	background-color: #154360;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	width: 30%;
+	vertical-align: top;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 20px;
+}
+
+body.is-mobile.landing .prize {
+	width:250px;
+	height:300px;
+	padding-top: 30px;
+}
+
+/* .grand_prize {
+	float: left;
+	width: 320px;
+}
+.second_place {
+	margin: 0 auto;
+	width: 320px;
+}
+.third_place {
+	float: right;
+	width: 320px;
+} */
+
+.prize_list {
+	list-style: none;
+	padding: 0;
+ 	margin: 0;
+}
+
+.prize_list li {
+	color: #fff !important;
+	list-style-position: outside;
 }
