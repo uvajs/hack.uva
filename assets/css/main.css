@@ -3975,6 +3975,13 @@ body.is-mobile.landing .theme-icon {
 	text-align: center;
 	/* box-sizing: border-box; */
 }
+
+.partners {
+	width: 100%;
+	margin-top:-10px !important;
+	text-align: center;
+}
+
 .logo-link {
 	border:none;
 }
@@ -3997,6 +4004,15 @@ body.is-mobile.landing .theme-icon {
 .sponsors-picture {
 	width:280px;
 	margin-top:50px;
+	margin-bottom:50px;
+	margin-left: 25px;
+	margin-right: 25px;
+	display: unset !important;
+}
+
+.partners-picture {
+	width: 280px;
+	margin-top: 50px;
 	margin-bottom:50px;
 	margin-left: 25px;
 	margin-right: 25px;
