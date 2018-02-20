@@ -3852,14 +3852,14 @@ body.is-mobile.landing .theme-icon {
 	display:inline-block;
 	margin:10px;
 	border-radius: 50%;
-	width:200px;
-	height:200px;
+	width:175px;
+	height:175px;
 }
 
 .person-photo img {
 	border-radius: 50%;
-	width:200px;
-	height:200px;
+	width:175px;
+	height:175px;
 }
 
 .person-info {
@@ -3867,8 +3867,8 @@ body.is-mobile.landing .theme-icon {
 }
 
 .person-photo:hover .person-info {
-	width:200px;
-  height:200px;
+	width:175px;
+  height:175px;
   background:rgba(0,0,0,.5);
   position:absolute;
   top:0;
@@ -3896,7 +3896,7 @@ body.is-mobile.landing .theme-icon {
 }
 
 .person-photo:hover .person-info-title {
-	font-size: 15px !important;
+	font-size: 12px !important;
 	color: #fff !important;
 	margin-top: -15px;
 
