@@ -4003,12 +4003,15 @@ body.is-mobile.landing .theme-icon {
 
 .sponsors-picture {
 	width:280px;
-	margin-top:50px;
+	/*margin-top:25px;*/
 	margin-bottom:50px;
 	margin-left: 25px;
 	margin-right: 25px;
 	display: unset !important;
+	vertical-align: middle;
 }
+
+
 
 .partners-picture {
 	width: 280px;
@@ -4017,6 +4020,7 @@ body.is-mobile.landing .theme-icon {
 	margin-left: 25px;
 	margin-right: 25px;
 	display: unset !important;
+	vertical-align: middle;
 }
 
 #mlh-trust-badge {
