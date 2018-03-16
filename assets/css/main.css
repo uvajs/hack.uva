@@ -4078,3 +4078,17 @@ body.is-mobile.landing .prize {
 	color: #fff !important;
 	list-style-position: outside;
 }
+
+.sponsored-prizes {
+	padding: 0 10%;
+}
+.sponsored-prizes .prize_list li {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+.sponsored-prizes .prize_list li b {
+	text-align: right;
+	margin-right: 1rem;
+}
