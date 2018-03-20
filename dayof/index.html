@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>hack.uva</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">hack.uva</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu">
+									<ul>
+										<li><a href="index.html">Schedule</a></li>
+										<li><a href="#map">Map</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Schedule -->
+				<section id="schedule" class="wrapper special">
+					<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:20px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+					<div class="inner">
+						<header class="major">
+							<h2>Schedule</h2>
+						</header>		
+						<table>	
+							<tr>
+							<td>
+							<p> Saturday, March 24 </p>			
+							<table class="schedule">
+								<tbody>
+									<tr>
+							       		<td>Breakfast and Coffee @ UVA Engineering School</td>
+							       		<td class="time">9:30am</td>
+							      	</tr>
+							      	<tr>
+							       		<td>Registration Begins @ UVA Engineering School</td>
+							       		<td class="time">9:30am</td>
+					        		</tr>
+							      	<tr>
+							       		<td>Introduction to Hack.UVA</td>
+					         	 		<td class="time">11:00am</td>
+							      	</tr>
+							      	<tr>
+							        	<td><b>HACKING BEGINS</b></td>
+							        	<td class="time">11:30am</td>
+							      	</tr>
+					        		<tr>
+							        	<td>Lunch</td>
+							        	<td class="time">1:00pm</td>
+							      	</tr>
+					        		<tr>
+							        	<td>Dinner</td>
+							        	<td class="time">6:30pm</td>
+							      	</tr>
+										<td>MLH Event</td>
+										<td class="time">9:00pm</td>
+									</tr>
+							  	</tbody>
+							</table>
+						</td>
+						<td>
+							<p> Sunday, March 25 </p>
+							<table class="schedule">
+					        	<tbody>
+									<tr>
+							          <td>Midnight Snacks</td>
+							          <td class="time">12:00am</td>
+					        		</tr>
+							        <tr>
+								          <td>Breakfast</td>
+								          <td class="time">8:00am</td>
+							        </tr>
+							        <tr>
+								          <td><b>HACKING ENDS</b></td>
+								          <td class="time">11:30am</td>
+							        </tr>
+							        <tr>
+								          <td>Lunch</td>
+								          <td class="time">11:30am</td>
+							        </tr>
+							        <tr>
+								          <td>Demos</td>
+								          <td class="time">1:00pm</td>
+							        </tr>
+							        <tr>
+								          <td>Awards</td>
+								          <td class="time">3:00pm</td>
+							        </tr>
+					      		</tbody>
+							</table>
+						</td>
+					</tr>
+					</table>
+					</div>
+				</section>
+
+
+				<!-- Map -->
+				<section id="map" class="wrapper style1 special">
+					<div class="inner">
+						<div id="gmaps" style="margin-top: -20px; width:100%;height:500px; align-content: center;"></div>
+
+						<script>
+						function myMap() {
+							var mapOptions = {
+							    center: new google.maps.LatLng(38.032700, -78.511058),
+							    zoom: 17,
+							    mapTypeId: google.maps.MapTypeId.ROADMAP
+							}
+							var map = new google.maps.Map(document.getElementById("gmaps"), mapOptions);
+
+							//Set Markers
+							var chemBldg = new google.maps.Marker({
+							    position: new google.maps.LatLng(38.0335, -78.5117),
+							    title: "Chemistry Building"
+							});
+							var thorntonA = new google.maps.Marker({
+								position: new google.maps.LatLng(38.0332726,-78.50966059999996),
+								title: "Thronton Hall A Wing"
+							});
+							var thorntonB = new google.maps.Marker({
+								position: new google.maps.LatLng(38.0330833, -78.5101356),
+								title: "Thronton Hall B Wing"
+							});
+							var thorntonC = new google.maps.Marker({
+								position: new google.maps.LatLng(38.03291240000001,-78.50949300000002),
+								title: "Thronton Hall C Wing"
+							});
+							var thorntonD = new google.maps.Marker({
+								position: new google.maps.LatLng(38.0326021,-78.5104331),
+								title: "Thronton Hall D Wing"
+							});
+							var thorntonE = new google.maps.Marker({
+								position: new google.maps.LatLng(38.0324846, -78.5097284),
+								title: "Thronton Hall E Wing"
+							});
+							var riceHall = new google.maps.Marker({
+								position: new google.maps.LatLng(38.0316188,-78.51084589999999),
+								title: "Rice Hall"
+							});
+
+							chemBldg.setMap(map);
+							thorntonA.setMap(map);
+							thorntonB.setMap(map);
+							thorntonC.setMap(map);
+							thorntonD.setMap(map);
+							thorntonE.setMap(map);
+							riceHall.setMap(map);
+
+							google.maps.event.addListener(chemBldg,'click',function() {
+								var infowindow = new google.maps.InfoWindow({
+							  		content:"Chemistry Building"
+								});
+								infowindow.open(map,chemBldg);
+							});
+							google.maps.event.addListener(thorntonA,'click',function() {
+								var infowindow = new google.maps.InfoWindow({
+							  		content:"Thronton A Wing"
+								});
+								infowindow.open(map,thorntonA);
+							});	
+							google.maps.event.addListener(thorntonB,'click',function() {
+								var infowindow = new google.maps.InfoWindow({
+							  		content:"Thronton B Wing"
+								});
+								infowindow.open(map,thorntonB);
+							});	
+							google.maps.event.addListener(thorntonC,'click',function() {
+								var infowindow = new google.maps.InfoWindow({
+							  		content:"Thronton C Wing"
+								});
+								infowindow.open(map,thorntonC);
+							});	
+							google.maps.event.addListener(thorntonD,'click',function() {
+								var infowindow = new google.maps.InfoWindow({
+							  		content:"Thronton D Wing"
+								});
+								infowindow.open(map,thorntonD);
+							});	
+							google.maps.event.addListener(thorntonE,'click',function() {
+								var infowindow = new google.maps.InfoWindow({
+							  		content:"Thronton E Wing"
+								});
+								infowindow.open(map,thorntonE);
+							});	
+							google.maps.event.addListener(riceHall, 'click', function() {
+								var infowindow = new google.maps.InfoWindow({
+							  		content:"Rice Hall"
+								});
+								infowindow.open(map,riceHall);
+							});						
+						}
+						</script>
+
+						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQYLPNXjp9W_U2bmFgcbCFRWdu9kwKYlk&callback=myMap"></script>
+					</div>
+				</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/hackersatuva/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://twitter.com/uvahackers" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="mailto:hackersuva-contact@virginia.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>hack.UVA</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
