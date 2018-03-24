@@ -230,23 +230,32 @@
 							}
 							var map = new google.maps.Map(document.getElementById("gmaps"), mapOptions);
 
+
+							//Styling for markers
+							var mcOptions = {
+					            //imagePath: 'https://googlemaps.github.io/js-marker-clusterer/images/m',
+					          styles:[{
+				                textColor:"black",
+					          }]
+					        };
+
 							//Set Markers
 							var chemBldg = new google.maps.Marker({
 							    position: new google.maps.LatLng(38.0335, -78.5117),
-							    title: "Chemistry Building"
+							    title: "Chemistry Building",
 							});
 							var thorntonA = new google.maps.Marker({
 								position: new google.maps.LatLng(38.0332726,-78.50966059999996),
 								title: "Thornton Hall A Wing"
 							});
-							var thorntonB = new google.maps.Marker({
-								position: new google.maps.LatLng(38.0330833, -78.5101356),
-								title: "Thornton Hall B Wing"
-							});
-							var thorntonC = new google.maps.Marker({
-								position: new google.maps.LatLng(38.03291240000001,-78.50949300000002),
-								title: "Thornton Hall C Wing"
-							});
+							// var thorntonB = new google.maps.Marker({
+							// 	position: new google.maps.LatLng(38.0330833, -78.5101356),
+							// 	title: "Thornton Hall B Wing"
+							// });
+							// var thorntonC = new google.maps.Marker({
+							// 	position: new google.maps.LatLng(38.03291240000001,-78.50949300000002),
+							// 	title: "Thornton Hall C Wing"
+							// });
 							var thorntonD = new google.maps.Marker({
 								position: new google.maps.LatLng(38.0326021,-78.5104331),
 								title: "Thornton Hall D Wing"
@@ -262,8 +271,8 @@
 
 							chemBldg.setMap(map);
 							thorntonA.setMap(map);
-							thorntonB.setMap(map);
-							thorntonC.setMap(map);
+							// thorntonB.setMap(map);
+							// thorntonC.setMap(map);
 							thorntonD.setMap(map);
 							thorntonE.setMap(map);
 							riceHall.setMap(map);
@@ -271,7 +280,7 @@
 
 							google.maps.event.addListener(chemBldg,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
-							  		content:"Chemistry Building"
+							  		content:"<p style='margin-bottom:0; color:black;'>Chemistry Building</br>402</p>"
 								});
 								infowindow.open(map,chemBldg);
 								google.maps.event.addListener(map, "click", function(event) {
@@ -280,34 +289,34 @@
 							});
 							google.maps.event.addListener(thorntonA,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
-							  		content:"Thornton A Wing"
+							  		content:"<p style='margin-bottom:0; color:black;'>Thornton A Wing </br>A120</p>"
 								});
 								infowindow.open(map,thorntonA);
 								google.maps.event.addListener(map, "click", function(event) {
 							    	infowindow.close();
 								});
 							});	
-							google.maps.event.addListener(thorntonB,'click',function() {
-								var infowindow = new google.maps.InfoWindow({
-							  		content:"Thornton B Wing"
-								});
-								infowindow.open(map,thorntonB);
-								google.maps.event.addListener(map, "click", function(event) {
-							    	infowindow.close();
-								});
-							});	
-							google.maps.event.addListener(thorntonC,'click',function() {
-								var infowindow = new google.maps.InfoWindow({
-							  		content:"Thornton C Wing"
-								});
-								infowindow.open(map,thorntonC);
-								google.maps.event.addListener(map, "click", function(event) {
-							    	infowindow.close();
-								});
-							});	
+							// google.maps.event.addListener(thorntonB,'click',function() {
+							// 	var infowindow = new google.maps.InfoWindow({
+							//   		content:"Thornton B Wing"
+							// 	});
+							// 	infowindow.open(map,thorntonB);
+							// 	google.maps.event.addListener(map, "click", function(event) {
+							//     	infowindow.close();
+							// 	});
+							// });	
+							// google.maps.event.addListener(thorntonC,'click',function() {
+							// 	var infowindow = new google.maps.InfoWindow({
+							//   		content:"Thornton C Wing </br> "
+							// 	});
+							// 	infowindow.open(map,thorntonC);
+							// 	google.maps.event.addListener(map, "click", function(event) {
+							//     	infowindow.close();
+							// 	});
+							// });	
 							google.maps.event.addListener(thorntonD,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
-							  		content:"Thornton D Wing"
+							  		content:"<p style='margin-bottom:0; color:black;'>Thornton D Wing </br>D115</br>D221</br>D222</br>D223</p>",
 								});
 								infowindow.open(map,thorntonD);
 								google.maps.event.addListener(map, "click", function(event) {
@@ -316,7 +325,7 @@
 							});	
 							google.maps.event.addListener(thorntonE,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
-							  		content:"Thornton E Wing"
+							  		content:"<p style='margin-bottom:0; color:black;'>Thornton E Wing </br>E303</br>E304</br>E316</p>"
 								});
 								infowindow.open(map,thorntonE);
 								google.maps.event.addListener(map, "click", function(event) {
@@ -325,7 +334,7 @@
 							});	
 							google.maps.event.addListener(riceHall, 'click', function() {
 								var infowindow = new google.maps.InfoWindow({
-							  		content:"Rice Hall"
+							  		content:"<p style='margin-bottom:0; color:black;'>Rice Hall </br>019</br>032</br>107</br>108</br>109</br>130</br>204</br>242</br>404</br>414</br>504</br>514</p>"
 								});
 								infowindow.open(map,riceHall);
 								google.maps.event.addListener(map, "click", function(event) {
