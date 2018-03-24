@@ -268,47 +268,69 @@
 							thorntonE.setMap(map);
 							riceHall.setMap(map);
 
+
 							google.maps.event.addListener(chemBldg,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
 							  		content:"Chemistry Building"
 								});
 								infowindow.open(map,chemBldg);
+								google.maps.event.addListener(map, "click", function(event) {
+							    	infowindow.close();
+								});
 							});
 							google.maps.event.addListener(thorntonA,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
 							  		content:"Thronton A Wing"
 								});
 								infowindow.open(map,thorntonA);
+								google.maps.event.addListener(map, "click", function(event) {
+							    	infowindow.close();
+								});
 							});	
 							google.maps.event.addListener(thorntonB,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
 							  		content:"Thronton B Wing"
 								});
 								infowindow.open(map,thorntonB);
+								google.maps.event.addListener(map, "click", function(event) {
+							    	infowindow.close();
+								});
 							});	
 							google.maps.event.addListener(thorntonC,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
 							  		content:"Thronton C Wing"
 								});
 								infowindow.open(map,thorntonC);
+								google.maps.event.addListener(map, "click", function(event) {
+							    	infowindow.close();
+								});
 							});	
 							google.maps.event.addListener(thorntonD,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
 							  		content:"Thronton D Wing"
 								});
 								infowindow.open(map,thorntonD);
+								google.maps.event.addListener(map, "click", function(event) {
+							    	infowindow.close();
+								});
 							});	
 							google.maps.event.addListener(thorntonE,'click',function() {
 								var infowindow = new google.maps.InfoWindow({
 							  		content:"Thronton E Wing"
 								});
 								infowindow.open(map,thorntonE);
+								google.maps.event.addListener(map, "click", function(event) {
+							    	infowindow.close();
+								});
 							});	
 							google.maps.event.addListener(riceHall, 'click', function() {
 								var infowindow = new google.maps.InfoWindow({
 							  		content:"Rice Hall"
 								});
 								infowindow.open(map,riceHall);
+								google.maps.event.addListener(map, "click", function(event) {
+							    	infowindow.close();
+								});
 							});						
 						}
 						</script>
