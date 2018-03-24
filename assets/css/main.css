@@ -4093,3 +4093,7 @@ body.is-mobile.landing .prize {
 	margin-right: 1rem;
 }
 
+.schedule td{
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+}
