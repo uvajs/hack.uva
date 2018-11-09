@@ -1,0 +1,173 @@
+
+body{
+	background-color: white;
+	line-height: 1.4;
+	color:#282828;
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+}
+
+.green > .vtimeline-icon{
+	background: #2ecc71;
+}
+
+.yellow > .vtimeline-icon{
+	background: #f1c40f
+}
+
+.blue > .vtimeline-icon{
+	background: #3498db;
+}
+
+.red > .vtimeline-icon{
+	background: #e74c3c;
+}
+
+.purple > .vtimeline-icon{
+	background: #9b59b6;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 50px;
+}
+
+a{
+	color: #2c3e50;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
+#me{
+	position: fixed;
+}
+
+#taglines{
+	height: 45px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.bar {
+	font-size:25px;
+	transform: translateY(2px);
+}
+
+#info{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: -50px;
+}
+
+#timeline{
+	/* // height: 100vh; */
+	/* // overflow-y:auto; */
+}
+
+.vtimeline-point:nth-child(odd){
+	text-align: right;
+}
+
+button {
+	user-select: none;
+}
+
+#sideBarToggle {
+	position: fixed;
+	left: 100%;
+	top: 50%;
+	height: 100px;
+	width: 100px;
+	margin-top: -50px;
+	margin-left: -50px;
+	background-color: black;
+	user-select: none;
+	cursor: pointer;
+}
+
+.icon {
+	margin-top: 35px;
+	margin-left: 20px;
+	color: #fbfcfc;
+}
+
+.angle-left:before {
+  content: "\f104";
+}
+
+.angle-right:before {
+  content: "\f105";
+}
+
+.year{
+	font-size: 30px;
+}
+
+.angle-left:before {
+  content: "\f104";
+}
+.angle-right:before {
+  content: "\f105";
+}
+
+.oneline{
+	line-height: 3;
+}
+
+.bar{
+	margin-top: 25px;
+}
+
+button{
+	margin-right: 15px;
+}
+
+#info{
+	position: relative;
+}
+
+#scrolldown{
+	position: absolute;
+	top: 93%;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+img{
+	width: 100px;
+	height: 50px;
+}
+
+@media only screen and (max-width: 320px){
+	button {
+		max-width: 128px;
+		margin-right: 5px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+		#me{
+			position: static;
+		}
+
+		#scrolldown{
+			display: block;
+		}
+
+		#timeline{
+			margin-top: 50px;
+		}
+}
+
+@media only screen and (max-width: 1024px) {
+	.vtimeline-point:nth-child(odd){
+		text-align: left;
+	}
+}
+.vtimeline-block:after,.vtimeline:before{content:''}.vtimeline-block:after,.vtimeline-right:after{border-top:10px solid transparent;border-bottom:10px solid transparent}.vtimeline{position:relative;padding:30px;overflow:hidden}.vtimeline:before{position:absolute;height:100%;width:4px;background:#000;top:0;bottom:0;left:0;right:0;margin:0 auto}.vtimeline-point{position:relative;width:100%;margin-bottom:30px}.vtimeline-icon{position:absolute;top:10px;height:25px;width:25px;left:0;right:0;margin:0 auto;border-radius:50%;background:#000}.vtimeline-block{width:45%;margin:0;-webkit-transition:.5s ease all;transition:.5s ease all}.vtimeline-block:after{position:absolute;top:13px;left:45%;width:0;height:0;border-left:10px solid #282828;border-right:none}.vtimeline-right{margin-left:55%}.vtimeline-right.vt-animate-slide .vtimeline-content{-webkit-transform:translateX(100%);transform:translateX(100%)}.vtimeline-right .vtimeline-date{left:auto;right:55%;float:right}.vtimeline-right:after{left:auto;right:45%;border-left:none;border-right:10px solid #282828}.vtimeline-date{position:absolute;left:55%;top:15px}.vtimeline-content{-webkit-transition:.5s ease all;transition:.5s ease all}.vt-animate-fade,.vt-animate-slide{opacity:0}.vt-animate-slide .vtimeline-content{-webkit-transform:translateX(-100%);transform:translateX(-100%)}.vt-noarrows:after{content:none}@media only screen and (max-width:992px){.vtimeline:before{left:30px;right:auto;margin:0}.vtimeline-icon{left:-10px;right:auto;margin:0}.vtimeline-block{width:85%;margin-left:15%}.vtimeline-block:after{left:auto;right:85%;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:none;border-right:10px solid #282828}.vtimeline-date{position:relative;display:block;top:0;left:0;right:auto;background:#eee}.vtimeline-right .vtimeline-date{right:auto}.vtimeline.basic .vtimeline-date{padding:10px 10px 0}.vt-animate-slide .vtimeline-content{-webkit-transform:translateX(100%);transform:translateX(100%)}}
