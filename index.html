@@ -15,14 +15,52 @@
 		<meta property="og:title" content="HooHacks" />
 		<meta property="og:description" content="The premier annual hackathon of UVA is happening the weekend of March 2nd-3rd!" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+			html,
+			body.landing {
+				background: linear-gradient(127deg, #3156b1, #1b1848);
+				color: #fff;
+				font-family: sans-serif;
+				font-size: 18px;
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			#redirect-message {
+				width: 100%;
+				height: 100%;
+				display: grid;
+				align-items: center;
+				justify-items: center;
+				letter-spacing: 2px;
+			}
+
+			#redirect-message h2 {
+				text-align: center;
+			}
+
+			#redirect-message a {
+				color: #9d5cab;
+				text-decoration: none;
+			}
+
+			#redirect-message a:hover {
+				color: #7c55aa;
+			}
+		</style>
 	</head>
 	<body class="landing">
-		<div style="padding:20%">
-        <h2>Our hackathon is currently undergoing major refactoring! Come back 12/1 for our exciting reveal!!</h2>
-        <p>The premier annual hackathon of UVA is happening the weekend of March 2nd-3rd, 2019</p>
-	</div>
+		<div id="redirect-message">
+			<h2>Redirecting to <a href="https://hoohacks.io/">hoohacks.io</a>...</h2>
+		</div>
+		<script>
+			setTimeout(() => {
+				window.location.href = 'https://hoohacks.io/';
+			}, 1000);
+		</script>
 	</body>
 </html>
